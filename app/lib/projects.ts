@@ -381,4 +381,18 @@ export const projects: Project[] = [
       cdn("24fe53f3ed814c228bdfe637559caa9f"),
     ],
   },
+  {
+    slug: "vine-trade-show-display",
+    title: "VINE Trade Show Display",
+    category: "Trade show design",
+    description:
+      "This was a project that I completed during my time at Appriss for VINE (Victim Information and Notification Everyday). It is a 100% vector backdrop and tablecloth display that I created using Adobe Illustrator.",
+    image: cdn("b4268ab63bab49b2a0d96906c00caa4a"),
+    images: [
+      cdn("022ce1d6133e4593863145982c8d0a08"),
+      cdn("b4268ab63bab49b2a0d96906c00caa4a"),
+      cdn("b5db6143b7a6452d9993f4a825f4f799"),
+      cdn("84143951f2d141bd9b3d908d4c31ede0"),
+    ],
+  },
 ];
