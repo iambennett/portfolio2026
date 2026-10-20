@@ -85,6 +85,20 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "art-in-speed-park",
+    title: "Art in Speed Park",
+    category: "WordPress website design",
+    description:
+      "Art in Speed Park is an annual art show in Speed Park, in southern Indiana. I built this website in WordPress and added custom code and CSS customizations so the site would stand out visually.",
+    image: cdn("4a3a41ff1361435a88d7f718bf00d356"),
+    images: [
+      cdn("4a3a41ff1361435a88d7f718bf00d356"),
+      cdn("e0cbf5e63b254a7c9e0f768956c53a7e"),
+      cdn("6c594d0826c248659394bf9efe437d7c"),
+      cdn("ec72d14c027d4e17986832be664ef0f9"),
+    ],
+  },
+  {
     slug: "northwind-brand-system",
     title: "Northwind Brand System",
     category: "Brand identity",
