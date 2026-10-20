@@ -161,6 +161,14 @@ export const projects: Project[] = [
     gradient: "from-red-700 via-zinc-800 to-zinc-900",
   },
   {
+    slug: "educational-directions-sales-sheets",
+    title: "Educational Directions Sales Sheets",
+    category: "Sales collateral",
+    description:
+      "This is a company sales sheet project that I completed for Educational Directions. I created it using Adobe Photoshop, Illustrator, and InDesign.",
+    gradient: "from-blue-600 via-sky-400 to-yellow-300",
+  },
+  {
     slug: "northwind-brand-system",
     title: "Northwind Brand System",
     category: "Brand identity",
