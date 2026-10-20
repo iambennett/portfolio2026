@@ -216,4 +216,17 @@ export const projects: Project[] = [
       cdn("2790689751ec40ac855b81ec9c2b4a3a"),
     ],
   },
+  {
+    slug: "educational-directions-rebrand",
+    title: "Educational Directions Rebrand",
+    category: "Branding",
+    description:
+      "I have designed several iterations of logos for Educational Directions over the years, along with the branding that accompanied each version. This is the most recent branding for the company. I have also created its marketing materials, website, business cards, trade show displays, and direct and email marketing campaigns.",
+    image: cdn("4a345d08c0f04cd1a70a9ededa653fb2"),
+    images: [
+      cdn("4a345d08c0f04cd1a70a9ededa653fb2"),
+      cdn("80d16f13f6684a6c838b6929ee74383f"),
+      cdn("fe3740bd3c1f42829bf2db09162b9b48"),
+    ],
+  },
 ];
