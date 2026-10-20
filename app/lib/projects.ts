@@ -235,6 +235,13 @@ export const projects: Project[] = [
     category: "Web design",
     description:
       "I designed the Educational Directions website in WordPress and created its graphic organizers, logos, and other site graphics. More recently, the team has integrated AI tools to help with blog posts and image creation for the site.",
+    image: cdn("c914db390ae648efb77966d8e2e0a6df"),
+    images: [
+      cdn("c914db390ae648efb77966d8e2e0a6df"),
+      cdn("db2f40a9ae964fa3a50720a2f89582a9"),
+      cdn("08f5cd128dc04cb3821f94b18cad9748"),
+      cdn("c395fce691fc48b7b0e808e4aa9f6b9c"),
+    ],
   },
   {
     slug: "flex-av",
