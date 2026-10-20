@@ -312,4 +312,24 @@ export const projects: Project[] = [
     image: cdn("60acc6dbcdc24ce2bd2017e9ded79ee9"),
     images: [cdn("60acc6dbcdc24ce2bd2017e9ded79ee9")],
   },
+  {
+    slug: "hope-for-leaders-in-the-2020s",
+    title: "HOPE for Leaders in the 2020's",
+    category: "Book design",
+    description:
+      "This is a book that I had the pleasure of working with Hope Zoeller, the author on. She initially asked me to work up some graphics for the inside of the book, but then also asked me to design the cover to match. I created these designs in Adobe Illustrator.",
+    image: cdn("8ef944e3f81e4288b17a79aac355321c"),
+    images: [
+      cdn("a0c532fa9e474a429f23d59edad7acea"),
+      cdn("8ef944e3f81e4288b17a79aac355321c"),
+      cdn("19c86e314fa845468e6212d41d242e8a"),
+      cdn("1f1c06d523824690bb24b22342f26ada"),
+      cdn("834877f9b7814388b3fae093e7025426"),
+      cdn("6a98fcb9a5a243a9b8dde1d5d2f1d741"),
+      cdn("c9f16252b6874e7b92bb20c9df6de761"),
+      cdn("e0b8cddee1e44c89974885965a12e63c"),
+      cdn("0184fe3496b74f07976d30e6544b97d0"),
+      cdn("91e859e04bdc4f5f9c9a6cfb18d28683"),
+    ],
+  },
 ];
