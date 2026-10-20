@@ -153,6 +153,14 @@ export const projects: Project[] = [
     gradient: "from-teal-600 via-cyan-400 to-teal-100",
   },
   {
+    slug: "javs-direct-mail",
+    title: "Justice AV Solutions Direct Mail",
+    category: "Direct mail",
+    description:
+      "This is a direct mail piece that I completed while working for Justice AV Solutions (JAVS). The mailing list was curated from web leads that we gathered after I integrated a marketing automation platform (Act-On) into the company website. This mailer was created in Adobe InDesign and Adobe Illustrator.",
+    gradient: "from-red-700 via-zinc-800 to-zinc-900",
+  },
+  {
     slug: "northwind-brand-system",
     title: "Northwind Brand System",
     category: "Brand identity",
