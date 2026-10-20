@@ -38,14 +38,14 @@ visual direction — read and preserve them on every subsequent build; do not
 re-derive a new direction. The first UI pass must fill these fields in as
 part of that build, not leave them as an empty template.
 
-- Product mode: `operate` | `read` | `persuade` | `experience`
-- Audience and cadence:
-- Visual world (name + the feeling it creates):
-- Palette family + neutral undertone:
-- Type treatment:
-- Composition:
-- Shape language:
-- Anti-references (defaults this app must not drift toward):
+- Product mode: `persuade`
+- Audience and cadence: Prospective clients and collaborators evaluating a designer's portfolio; visited occasionally, not daily.
+- Visual world (name + the feeling it creates): "Warm studio" — confident, editorial, and energetic, like a designer's working sketchbook pinned to a bright wall.
+- Palette family + neutral undertone: Coral/orange accent (`11 100% 61%` light, `11 100% 66%` dark) on warm-leaning neutrals; project covers use warm gradients.
+- Type treatment: Inter Variable, large tight-tracked semibold headlines (`text-5xl`–`text-7xl`, `leading-[1.05]`), muted body copy, small uppercase-free labels.
+- Composition: Single scrolling page: hero, two-column project grid, asymmetric about block, contact panel with footer. Generous vertical rhythm (`py-20`).
+- Shape language: Soft rounded corners (`rounded-xl` covers, `rounded-md` buttons, `rounded-2xl` contact panel); pill for the availability tag.
+- Anti-references (defaults this app must not drift toward): Gray SaaS landing pages, dense card dashboards, stock-photo hero imagery, and heavy gradients on text.
 
 ## Agent-Native is structural, not visual
 
