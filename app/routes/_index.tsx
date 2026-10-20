@@ -23,8 +23,12 @@ export default function HomeRoute() {
     <div className="h-full min-h-0 flex-1 overflow-y-auto bg-background text-foreground">
       <header className="sticky top-0 z-10 border-b border-border/60 bg-background/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="#top" className="text-sm font-semibold tracking-tight">
-            Iam Bennett
+          <a href="#top" className="flex items-center">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2Fbcb50ddddfe34df1833554796fdab2ea?format=webp&width=800&height=1200"
+              alt="Iam Bennett"
+              className="h-8 w-auto"
+            />
           </a>
           <nav className="flex items-center gap-6 text-sm text-muted-foreground">
             {navLinks.map((link) => (
