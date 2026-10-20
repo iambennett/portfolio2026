@@ -229,4 +229,11 @@ export const projects: Project[] = [
       cdn("80d16f13f6684a6c838b6929ee74383f"),
     ],
   },
+  {
+    slug: "educational-directions-website",
+    title: "Educational Directions Website",
+    category: "Web design",
+    description:
+      "I designed the Educational Directions website in WordPress and created its graphic organizers, logos, and other site graphics. More recently, the team has integrated AI tools to help with blog posts and image creation for the site.",
+  },
 ];
