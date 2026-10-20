@@ -104,15 +104,15 @@ export const projects: Project[] = [
     category: "Book illustration",
     description:
       "This project is from the book, \"Before the Applause - Why Artists Need to be Good Project Managers.\" I was honored to be the illustrator for this book. The writers approached me and were very open to whatever ideas I had, so after a few rounds of sketches, we decided on some fun characters that represented different artistic ventures, and I started working in Illustrator to create the over 500 hand sketched images for this book. Find it now at Amazon.com!",
-    image: cdn("dab6c1c97d2d45979105859f34c6fc6b"),
+    image: cdn("dc043dfa1e194f8dbffc17cdbda7dc8b"),
     images: [
+      cdn("dc043dfa1e194f8dbffc17cdbda7dc8b"),
       cdn("dab6c1c97d2d45979105859f34c6fc6b"),
       cdn("87433ff2ec9a4690ac159df5eac5e9d8"),
       cdn("82ead03405504e46823b1ce83ce954d1"),
       cdn("1c9909ba23a844c3962f96bf12f91e94"),
       cdn("4b209de5187d47c4bfdee17ba06c5975"),
       cdn("b0dad4a6a92f4b26bb5d2a4b01f52a83"),
-      cdn("dc043dfa1e194f8dbffc17cdbda7dc8b"),
     ],
   },
   {
