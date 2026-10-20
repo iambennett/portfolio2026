@@ -332,4 +332,17 @@ export const projects: Project[] = [
       cdn("91e859e04bdc4f5f9c9a6cfb18d28683"),
     ],
   },
+  {
+    slug: "javs-company-rebrand",
+    title: "JAVS Company Rebrand",
+    category: "Branding",
+    description:
+      "I was brought into JAVS specifically to help jumpstart a new marketing department. We began with a company rebrand. I was asked to take the current logo and give it a tech savvy update. I used Illustrator to accomplish this logo.",
+    image: cdn("753288a0f5004ad1abeeedd725f772b5"),
+    images: [
+      cdn("753288a0f5004ad1abeeedd725f772b5"),
+      cdn("623905a40cda4982b2e52bfc8da642a3"),
+      cdn("a060bb5d721d44b893506f194c506d5a"),
+    ],
+  },
 ];
