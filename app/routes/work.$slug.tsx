@@ -72,6 +72,11 @@ export default function ProjectRoute() {
         <h1 className="mt-2 text-4xl font-semibold tracking-tight md:text-6xl">
           {project.title}
         </h1>
+        {project.description && (
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+            {project.description}
+          </p>
+        )}
         <div className="mt-12 space-y-6">
           {project.images ? (
             project.images.map((src, index) => (

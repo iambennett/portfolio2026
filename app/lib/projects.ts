@@ -8,6 +8,7 @@ export type Project = {
   year?: string;
   image?: string;
   gradient?: string;
+  description?: string;
   images?: string[];
 };
 
@@ -28,6 +29,8 @@ export const projects: Project[] = [
     slug: "andrea-go-bowl-t-shirt",
     title: "Andrea Go Bowl T-Shirt",
     category: "T-shirt design",
+    description:
+      "BJ Thorne, founder of the Arkansas Angels Pageant, approached me about a fundraiser she was organizing to benefit hydrocephalus awareness. The fundraiser was a bowling event, so I designed the shirt around a bowling theme, with a hand signing \"I love you\" in American Sign Language. The shirt was created in Adobe Illustrator.",
     image: cdn("6724c11da5934bf0bdf7d01760a3876f"),
     images: [
       cdn("6724c11da5934bf0bdf7d01760a3876f"),
