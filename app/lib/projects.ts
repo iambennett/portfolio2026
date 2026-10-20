@@ -113,6 +113,11 @@ export const projects: Project[] = [
       cdn("1c9909ba23a844c3962f96bf12f91e94"),
       cdn("4b209de5187d47c4bfdee17ba06c5975"),
       cdn("b0dad4a6a92f4b26bb5d2a4b01f52a83"),
+      cdn("9f1f2a47d47042269d4f345763bb3209"),
+      cdn("a77db9f9002b470b89ecee3882ef0acc"),
+      cdn("baa4d21418f54c55afa1aa3edfe2027a"),
+      cdn("5052a63d37d2483097947706046f76a5"),
+      cdn("dff3f57a15fa44d38495b4e64851a707"),
     ],
   },
   {
