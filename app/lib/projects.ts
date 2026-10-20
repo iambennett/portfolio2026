@@ -145,6 +145,14 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "chronic-illness-counseling-center",
+    title: "Chronic Illness Counseling Center",
+    category: "Branding and marketing",
+    description:
+      "This is a branding project that I did for Chronic Illness Counseling Center. Created in Illustrator, the branding resembles a dandelion with petals floating off into the wind. I also created business cards, a website, and some marketing material for the company.",
+    gradient: "from-teal-600 via-cyan-400 to-teal-100",
+  },
+  {
     slug: "northwind-brand-system",
     title: "Northwind Brand System",
     category: "Brand identity",
