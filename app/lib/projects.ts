@@ -60,7 +60,15 @@ export const projects: Project[] = [
     year: "2015",
     description:
       "This was a redesign of the Appriss.com corporate site. The company hosted the website internally and did not want any content management system running on its servers, so I hand coded everything in HTML and CSS. I also created all of the images for the site. The project spanned over 50 unique pages, and web traffic increased by 27% in the year following the update.",
-    gradient: "from-blue-600 via-sky-500 to-cyan-300",
+    image: cdn("e113b38ae8a24103be6526725e372fcc"),
+    images: [
+      cdn("e113b38ae8a24103be6526725e372fcc"),
+      cdn("6e45be8be62a423082f70ebfab3ba6f6"),
+      cdn("63d1f63f178e4137ae5088a47cbfd108"),
+      cdn("30161e088efb44b694efc1fa2c3e817a"),
+      cdn("e6100db8cf1542c885c7e9bfd8f399dd"),
+      cdn("1f0b74d16dff4e889543d574880e6ded"),
+    ],
   },
   {
     slug: "northwind-brand-system",
