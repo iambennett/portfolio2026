@@ -1,4 +1,5 @@
 import { IconArrowUpRight, IconMail } from "@tabler/icons-react";
+import { HeroCollage } from "@/components/hero-collage";
 import { ProjectCard } from "@/components/project-card";
 import { projects } from "@/lib/projects";
 
@@ -45,11 +46,9 @@ export default function HomeRoute() {
       </header>
 
       <main id="top">
-        <section className="mx-auto max-w-6xl px-6 pb-20 pt-24 md:pt-32">
-          <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-border px-3 py-1 text-xs text-muted-foreground">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Available for select projects
-          </p>
+        <section className="relative isolate overflow-hidden">
+          <HeroCollage />
+          <div className="relative mx-auto max-w-6xl px-6 pb-20 pt-24 md:pt-32">
           <h1 className="max-w-3xl text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl">
             Designing brands and products that feel <span className="text-primary">alive.</span>
           </h1>
@@ -71,6 +70,7 @@ export default function HomeRoute() {
             >
               Get in touch
             </a>
+          </div>
           </div>
         </section>
 
