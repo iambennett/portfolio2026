@@ -166,7 +166,13 @@ export const projects: Project[] = [
     category: "Sales collateral",
     description:
       "This is a company sales sheet project that I completed for Educational Directions. I created it using Adobe Photoshop, Illustrator, and InDesign.",
-    gradient: "from-blue-600 via-sky-400 to-yellow-300",
+    image: cdn("44965928790b4366b3c1a8df597b1b03"),
+    images: [
+      cdn("44965928790b4366b3c1a8df597b1b03"),
+      cdn("2e31a0ac2011413faebbc9cbedc0f637"),
+      cdn("2b535a2fae9a4aab83a9d6c7e9e9dfda"),
+      cdn("5e80ed84896e4cbc93c379e3c37cc673"),
+    ],
   },
   {
     slug: "northwind-brand-system",
