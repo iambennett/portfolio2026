@@ -54,6 +54,15 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "appriss-corporate-site-redesign",
+    title: "Appriss Corporate Site Redesign",
+    category: "Website design and development",
+    year: "2015",
+    description:
+      "This was a redesign of the Appriss.com corporate site. The company hosted the website internally and did not want any content management system running on its servers, so I hand coded everything in HTML and CSS. I also created all of the images for the site. The project spanned over 50 unique pages, and web traffic increased by 27% in the year following the update.",
+    gradient: "from-blue-600 via-sky-500 to-cyan-300",
+  },
+  {
     slug: "northwind-brand-system",
     title: "Northwind Brand System",
     category: "Brand identity",
