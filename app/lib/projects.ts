@@ -187,6 +187,20 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "graham-financial-services",
+    title: "Graham Financial Services",
+    category: "Branding and web design",
+    description:
+      "Denise Graham, the owner, approached me about rebranding her company so that several smaller businesses could sit under one umbrella, Graham Financial Services. This project includes the logo for the main company and the D&G Tax & Financial Services branding and website. I created the branding and website elements in Adobe Photoshop and Illustrator, and built the website in WordPress.",
+    image: cdn("2044f60f60c7424fb69b6f904ab8b3f6"),
+    images: [
+      cdn("2044f60f60c7424fb69b6f904ab8b3f6"),
+      cdn("afab0d902f134f599a403552813a6b7f"),
+      cdn("1356574a58f04128a8224ceff391cc7f"),
+      cdn("ae088ed2cbb346ac867d9d2b71b9a0cd"),
+    ],
+  },
+  {
     slug: "northwind-brand-system",
     title: "Northwind Brand System",
     category: "Brand identity",
