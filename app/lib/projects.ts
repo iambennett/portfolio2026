@@ -395,4 +395,17 @@ export const projects: Project[] = [
       cdn("84143951f2d141bd9b3d908d4c31ede0"),
     ],
   },
+  {
+    slug: "javs-website-redesign",
+    title: "JAVS Website",
+    category: "Web design",
+    description:
+      "While working at JAVS, I was asked to redesign the entire website from the ground up. We came up with new navigation, an entirely new design, and deployed it in under 6 months. Later, I was in charge of connecting this website to our marketing automation platform in order to better track and score users, collect leads through forms, and contact them using captured email and contact data.",
+    image: cdn("f672bc67d9444f0cbe3146f64955d77b"),
+    images: [
+      cdn("f672bc67d9444f0cbe3146f64955d77b"),
+      cdn("4c2aba0501c2416b812682352540b53f"),
+      cdn("6d339ca4772048839398e0803c7fd104"),
+    ],
+  },
 ];
