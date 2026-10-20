@@ -290,4 +290,17 @@ export const projects: Project[] = [
       cdn("fbc098552ad142cb993d29cdf1fb458f"),
     ],
   },
+  {
+    slug: "hanna-the-best-so-far",
+    title: "Hanna - The Best So Far Album Design",
+    category: "Album design",
+    description:
+      "I was blessed to get to work with music artist Joe Hanna on several previous albums, and I was thrilled to get to design his best of cover and inner artwork. Created with Adobe Illustrator and Photoshop.",
+    image: cdn("c3d792823aac46ed98ec7545c7652170"),
+    images: [
+      cdn("c3d792823aac46ed98ec7545c7652170"),
+      cdn("f4e6bcf13b6b4f58b4a672165b9f4317"),
+      cdn("8dc669b3a95a4fb5a4f345d2e95e05ef"),
+    ],
+  },
 ];
