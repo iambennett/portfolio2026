@@ -150,7 +150,13 @@ export const projects: Project[] = [
     category: "Branding and marketing",
     description:
       "This is a branding project that I did for Chronic Illness Counseling Center. Created in Illustrator, the branding resembles a dandelion with petals floating off into the wind. I also created business cards, a website, and some marketing material for the company.",
-    gradient: "from-teal-600 via-cyan-400 to-teal-100",
+    image: cdn("574783926607433890b3e818559157ac"),
+    images: [
+      cdn("574783926607433890b3e818559157ac"),
+      cdn("b1ccd8a4f58140f99f8793a15c4681e0"),
+      cdn("33aed511f9374c5fa9e7e7955374001b"),
+      cdn("46f39eeea16b4c6b8da545952a9c523b"),
+    ],
   },
   {
     slug: "javs-direct-mail",
@@ -158,7 +164,13 @@ export const projects: Project[] = [
     category: "Direct mail",
     description:
       "This is a direct mail piece that I completed while working for Justice AV Solutions (JAVS). The mailing list was curated from web leads that we gathered after I integrated a marketing automation platform (Act-On) into the company website. This mailer was created in Adobe InDesign and Adobe Illustrator.",
-    gradient: "from-red-700 via-zinc-800 to-zinc-900",
+    image: cdn("d5feedec14464fc8b16683ce9680b238"),
+    images: [
+      cdn("d5feedec14464fc8b16683ce9680b238"),
+      cdn("1e3ce61421e04d29b4dc5eb3c47e7f6a"),
+      cdn("5cc9c6375b1c44c69e2adb4117f3c777"),
+      cdn("690d226a1cd345aaa96ec457b93e54aa"),
+    ],
   },
   {
     slug: "educational-directions-sales-sheets",
