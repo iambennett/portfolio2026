@@ -1,4 +1,5 @@
 import { IconArrowUpRight, IconMail } from "@tabler/icons-react";
+import { Link } from "react-router";
 import { HeroCollage } from "@/components/hero-collage";
 import { ProjectCard } from "@/components/project-card";
 import { projects } from "@/lib/projects";
@@ -12,6 +13,16 @@ export function meta() {
     },
   ];
 }
+
+const recentWorkSlugs = [
+  "before-the-applause",
+  "appriss-choice-ui-design",
+  "chronic-illness-counseling-center",
+];
+
+const recentWork = projects.filter((project) =>
+  recentWorkSlugs.includes(project.slug),
+);
 
 const navLinks = [
   { label: "Work", href: "#work" },
@@ -97,16 +108,42 @@ export default function HomeRoute() {
             </h2>
             <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
-                <span className="text-foreground">
-                  I help teams turn rough ideas into clear, memorable work.
-                </span>{" "}
-                My process starts with research and sketches, then moves
-                quickly into prototypes that can be tested with real people.
+                I'm Iam Bennett, a marketing director and multimedia designer
+                who loves solving creative challenges. Give me a client goal and
+                a blank canvas, and I'll find a smart, memorable way to get
+                there. I serve as Director of Operations & Marketing for
+                Educational Directions, LLC, in Louisville, Kentucky, where I
+                help keep the work running smoothly and the brand looking sharp.
+                I also run a freelance marketing practice.
               </p>
               <p>
-                Previously I worked with startups and studios on identity
-                systems, product interfaces, and launch campaigns.
+                I have more than 25 years of experience helping companies across
+                the United States strengthen their brands and stand out through
+                innovative design and targeted marketing. Along the way, I've led
+                national marketing campaigns and product launches in fields as
+                varied as law enforcement, K–12 education, and enterprise pharmacy
+                systems. Each experience has reinforced the same lesson: great
+                marketing starts with understanding the people you want to reach.
               </p>
+            </div>
+          </div>
+          <div className="md:col-span-2">
+            <div className="mb-8 flex items-end justify-between">
+              <h3 className="text-xl font-semibold tracking-tight">
+                Recent work
+              </h3>
+              <Link
+                to="/resume"
+                className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-opacity hover:opacity-80"
+              >
+                View full resume
+                <IconArrowUpRight size={16} />
+              </Link>
+            </div>
+            <div className="grid gap-x-6 gap-y-12 md:grid-cols-3">
+              {recentWork.map((project) => (
+                <ProjectCard key={project.slug} project={project} />
+              ))}
             </div>
           </div>
         </section>
