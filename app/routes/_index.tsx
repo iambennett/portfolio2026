@@ -15,37 +15,37 @@ const projects = [
     title: "Northwind Brand System",
     category: "Brand identity",
     year: "2026",
-    gradient: "from-orange-400 via-rose-400 to-amber-300",
+    gradient: "from-blue-500 via-sky-400 to-cyan-300",
   },
   {
     title: "Field Notes App",
     category: "Product design",
     year: "2025",
-    gradient: "from-stone-700 via-stone-500 to-orange-300",
+    gradient: "from-stone-700 via-stone-500 to-blue-300",
   },
   {
     title: "Harbor Editorial",
     category: "Editorial",
     year: "2025",
-    gradient: "from-rose-500 via-orange-300 to-yellow-200",
+    gradient: "from-blue-600 via-blue-300 to-sky-100",
   },
   {
     title: "Pulse Dashboard",
     category: "Web design",
     year: "2024",
-    gradient: "from-zinc-900 via-zinc-700 to-rose-500",
+    gradient: "from-zinc-900 via-zinc-700 to-blue-500",
   },
   {
     title: "Study Motion Series",
     category: "Motion",
     year: "2024",
-    gradient: "from-amber-300 via-orange-500 to-red-500",
+    gradient: "from-sky-300 via-blue-500 to-indigo-600",
   },
   {
     title: "Atlas Design System",
     category: "Design systems",
     year: "2023",
-    gradient: "from-neutral-200 via-orange-200 to-rose-300",
+    gradient: "from-neutral-200 via-blue-200 to-sky-300",
   },
 ];
 

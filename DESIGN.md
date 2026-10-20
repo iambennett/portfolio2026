@@ -41,7 +41,7 @@ part of that build, not leave them as an empty template.
 - Product mode: `persuade`
 - Audience and cadence: Prospective clients and collaborators evaluating a designer's portfolio; visited occasionally, not daily.
 - Visual world (name + the feeling it creates): "Warm studio" — confident, editorial, and energetic, like a designer's working sketchbook pinned to a bright wall.
-- Palette family + neutral undertone: Coral/orange accent (`11 100% 61%` light, `11 100% 66%` dark) on warm-leaning neutrals; project covers use warm gradients.
+- Palette family + neutral undertone: Blue accent (`221 83% 53%` light, `217 91% 65%` dark) on warm-leaning neutrals; project covers use blue gradients.
 - Type treatment: Inter Variable, large tight-tracked semibold headlines (`text-5xl`–`text-7xl`, `leading-[1.05]`), muted body copy, small uppercase-free labels.
 - Composition: Single scrolling page: hero, two-column project grid, asymmetric about block, contact panel with footer. Generous vertical rhythm (`py-20`).
 - Shape language: Soft rounded corners (`rounded-xl` covers, `rounded-md` buttons, `rounded-2xl` contact panel); pill for the availability tag.
