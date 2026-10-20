@@ -1,4 +1,6 @@
 import { IconArrowUpRight, IconMail } from "@tabler/icons-react";
+import { ProjectCard } from "@/components/project-card";
+import { projects } from "@/lib/projects";
 
 export function meta() {
   return [
@@ -9,59 +11,6 @@ export function meta() {
     },
   ];
 }
-
-const projects = [
-  {
-    title: "American Boat & Yacht",
-    category: "Website and brand identity",
-    year: "",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2Fd7986beb7cbb4baab6102cba8c2b32f8?format=webp&width=800&height=1200",
-  },
-  {
-    title: "Andrea Go Bowl T-Shirt",
-    category: "T-shirt design",
-    year: "",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F6724c11da5934bf0bdf7d01760a3876f?format=webp&width=800&height=1200",
-  },
-  {
-    title: "Northwind Brand System",
-    category: "Brand identity",
-    year: "2026",
-    gradient: "from-blue-500 via-sky-400 to-cyan-300",
-  },
-  {
-    title: "Field Notes App",
-    category: "Product design",
-    year: "2025",
-    gradient: "from-stone-700 via-stone-500 to-blue-300",
-  },
-  {
-    title: "Harbor Editorial",
-    category: "Editorial",
-    year: "2025",
-    gradient: "from-blue-600 via-blue-300 to-sky-100",
-  },
-  {
-    title: "Pulse Dashboard",
-    category: "Web design",
-    year: "2024",
-    gradient: "from-zinc-900 via-zinc-700 to-blue-500",
-  },
-  {
-    title: "Study Motion Series",
-    category: "Motion",
-    year: "2024",
-    gradient: "from-sky-300 via-blue-500 to-indigo-600",
-  },
-  {
-    title: "Atlas Design System",
-    category: "Design systems",
-    year: "2023",
-    gradient: "from-neutral-200 via-blue-200 to-sky-300",
-  },
-];
 
 const navLinks = [
   { label: "Work", href: "#work" },
@@ -132,32 +81,7 @@ export default function HomeRoute() {
           </div>
           <div className="grid gap-x-6 gap-y-12 md:grid-cols-2">
             {projects.map((project) => (
-              <article key={project.title} className="group cursor-pointer">
-                {project.image ? (
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="aspect-[4/3] w-full rounded-xl object-cover transition-transform duration-300 group-hover:-translate-y-1"
-                  />
-                ) : (
-                  <div
-                    className={`aspect-[4/3] w-full overflow-hidden rounded-xl bg-gradient-to-br ${project.gradient} transition-transform duration-300 group-hover:-translate-y-1`}
-                  />
-                )}
-                <div className="mt-4 flex items-start justify-between gap-4">
-                  <div>
-                    <h3 className="font-medium">{project.title}</h3>
-                    <p className="text-sm text-muted-foreground">
-                      {project.category}
-                    </p>
-                  </div>
-                  {project.year && (
-                    <span className="text-sm text-muted-foreground">
-                      {project.year}
-                    </span>
-                  )}
-                </div>
-              </article>
+              <ProjectCard key={project.slug} project={project} />
             ))}
           </div>
         </section>
