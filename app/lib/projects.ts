@@ -351,7 +351,7 @@ export const projects: Project[] = [
     category: "Event design",
     description:
       "I was asked to create all of the show graphics, signage, name badges, program, prospectus, and more for the Raintree Annual Users' Conference called TherapyCon. This was a huge project, and was an absolute blast to work on. The materials include room signs, floor displays, large backdrops, registration tables, event markers, and general signage.",
-    image: cdn("03e043b19b5b479c826155000da8d9b6"),
+    image: cdn("5413a5e49d814660a6a273bd2aeff35f"),
     images: [
       cdn("03e043b19b5b479c826155000da8d9b6"),
       cdn("df13baf962544d51ac92c5308219a309"),
@@ -375,6 +375,10 @@ export const projects: Project[] = [
       cdn("ce653e64c8564dbc827818a6653b3bf3"),
       cdn("f20990916e4f4c24bfdfa3302c638e47"),
       cdn("6d0d9a7694ff460ea2f299184b15a4ed"),
+      cdn("5413a5e49d814660a6a273bd2aeff35f"),
+      cdn("84a9ac87f983438fa19ba1cf127ba1f2"),
+      cdn("33f186909dfa4c4f96780a72aecc425c"),
+      cdn("24fe53f3ed814c228bdfe637559caa9f"),
     ],
   },
 ];
