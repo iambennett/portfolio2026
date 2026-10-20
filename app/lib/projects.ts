@@ -303,4 +303,13 @@ export const projects: Project[] = [
       cdn("8dc669b3a95a4fb5a4f345d2e95e05ef"),
     ],
   },
+  {
+    slug: "zirmed-healthcare-challenges-infographic",
+    title: "ZirMed - Healthcare Challenges Infographic",
+    category: "Infographic",
+    description:
+      "I created this infographic for the marketing team at ZirMed. It was featured on their website and in a few email campaigns. I used Illustrator to create these graphics.",
+    image: cdn("60acc6dbcdc24ce2bd2017e9ded79ee9"),
+    images: [cdn("60acc6dbcdc24ce2bd2017e9ded79ee9")],
+  },
 ];
