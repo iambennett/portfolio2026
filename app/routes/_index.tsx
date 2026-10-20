@@ -2,6 +2,7 @@ import { IconArrowUpRight, IconMail } from "@tabler/icons-react";
 import { Link } from "react-router";
 import { HeroCollage } from "@/components/hero-collage";
 import { ProjectCard } from "@/components/project-card";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { projects } from "@/lib/projects";
 
 export function meta() {
@@ -52,6 +53,7 @@ export default function HomeRoute() {
                 {link.label}
               </a>
             ))}
+            <ThemeToggle />
           </nav>
         </div>
       </header>
