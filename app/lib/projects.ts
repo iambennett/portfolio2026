@@ -261,4 +261,17 @@ export const projects: Project[] = [
       cdn("b5a308b6f6214790a7ba44e53c6e92c4"),
     ],
   },
+  {
+    slug: "zirmed-focus-on-healthcare",
+    title: "ZirMed Focus on Healthcare Booklet",
+    category: "Illustration and layout",
+    description:
+      "I created this marketing booklet for ZirMed, which was meant to be fun, colorful, and engaging. I illustrated every image in it and designed the layout. I used Illustrator and InDesign to complete the project.",
+    image: cdn("746abde2bae1407ebd223b402068b3a3"),
+    images: [
+      cdn("746abde2bae1407ebd223b402068b3a3"),
+      cdn("1663d7c06dc34ef29f2431e5116896cd"),
+      cdn("2ff81d66211c40179f2517016620ca53"),
+    ],
+  },
 ];
