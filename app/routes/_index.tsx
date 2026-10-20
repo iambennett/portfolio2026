@@ -12,6 +12,13 @@ export function meta() {
 
 const projects = [
   {
+    title: "American Boat & Yacht",
+    category: "Website and brand identity",
+    year: "",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2Fd7986beb7cbb4baab6102cba8c2b32f8?format=webp&width=800&height=1200",
+  },
+  {
     title: "Northwind Brand System",
     category: "Brand identity",
     year: "2026",
@@ -119,9 +126,17 @@ export default function HomeRoute() {
           <div className="grid gap-x-6 gap-y-12 md:grid-cols-2">
             {projects.map((project) => (
               <article key={project.title} className="group cursor-pointer">
-                <div
-                  className={`aspect-[4/3] w-full overflow-hidden rounded-xl bg-gradient-to-br ${project.gradient} transition-transform duration-300 group-hover:-translate-y-1`}
-                />
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="aspect-[4/3] w-full rounded-xl object-cover transition-transform duration-300 group-hover:-translate-y-1"
+                  />
+                ) : (
+                  <div
+                    className={`aspect-[4/3] w-full overflow-hidden rounded-xl bg-gradient-to-br ${project.gradient} transition-transform duration-300 group-hover:-translate-y-1`}
+                  />
+                )}
                 <div className="mt-4 flex items-start justify-between gap-4">
                   <div>
                     <h3 className="font-medium">{project.title}</h3>
@@ -129,9 +144,11 @@ export default function HomeRoute() {
                       {project.category}
                     </p>
                   </div>
-                  <span className="text-sm text-muted-foreground">
-                    {project.year}
-                  </span>
+                  {project.year && (
+                    <span className="text-sm text-muted-foreground">
+                      {project.year}
+                    </span>
+                  )}
                 </div>
               </article>
             ))}
