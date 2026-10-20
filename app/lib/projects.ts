@@ -40,6 +40,20 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "angels-pageant-system",
+    title: "Angels Pageant System",
+    category: "Branding and print",
+    description:
+      "The Angels Pageant System is a non-profit that puts on free pageants for children with disabilities. While volunteering with the organization, I created its branding, business cards, folders, brochures, websites, T-shirt graphics, and more.",
+    image: cdn("5291385798ac45d98e0561878c6000bd"),
+    images: [
+      cdn("5291385798ac45d98e0561878c6000bd"),
+      cdn("83e1663cc9cf4182a765977b753f0a4e"),
+      cdn("ac4f4365e2a440ef893c246723eefdb4"),
+      cdn("561e14fda03e440d80b97bdfb16b5483"),
+    ],
+  },
+  {
     slug: "northwind-brand-system",
     title: "Northwind Brand System",
     category: "Brand identity",
