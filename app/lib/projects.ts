@@ -129,6 +129,22 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "appriss-choice-ui-design",
+    title: "CHOICE for Appriss",
+    category: "UI design",
+    description:
+      "I designed the graphical user interface for CHOICE, a product for Appriss. I created it in Illustrator and Photoshop, and worked with the engineers at the company to export the necessary images, recreate the styles, and generate the animations needed for the user experience.",
+    image: cdn("33aa0aaf7fbe47469ec1ad8b48d8c9cd"),
+    images: [
+      cdn("33aa0aaf7fbe47469ec1ad8b48d8c9cd"),
+      cdn("49eb8142f58e4647a98839c787c12cdd"),
+      cdn("a178e0c7fe214f72afb575d7784bd3a3"),
+      cdn("009a605f77544ff288928d89fb230c95"),
+      cdn("0c8e08c4e8fd4c479653a8db37e225d1"),
+      cdn("44b472f3b4c5477aabc96c4fe4f41547"),
+    ],
+  },
+  {
     slug: "northwind-brand-system",
     title: "Northwind Brand System",
     category: "Brand identity",
