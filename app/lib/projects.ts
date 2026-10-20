@@ -236,4 +236,18 @@ export const projects: Project[] = [
     description:
       "I designed the Educational Directions website in WordPress and created its graphic organizers, logos, and other site graphics. More recently, the team has integrated AI tools to help with blog posts and image creation for the site.",
   },
+  {
+    slug: "flex-av",
+    title: "FLEX AV",
+    category: "Branding and print",
+    description:
+      "FLEX AV is a brand of JAVS. I created the logo and branding for the line, along with marketing cut sheets and trade show displays. I used Illustrator, Photoshop, and InDesign to complete the work.",
+    image: cdn("3f336e9d2ebe41ee8266726ac3326d70"),
+    images: [
+      cdn("3f336e9d2ebe41ee8266726ac3326d70"),
+      cdn("0ab4bfbbb6654144a9f42cdf242fd3f5"),
+      cdn("2ebe68af44bd4345adb956d0f5cbbfd0"),
+      cdn("7f68866186664bb8ac836d612c0ee05a"),
+    ],
+  },
 ];
