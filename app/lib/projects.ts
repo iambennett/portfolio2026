@@ -71,6 +71,20 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "appriss-trade-show-display",
+    title: "Appriss Trade Show Display",
+    category: "Trade show design",
+    description:
+      "I designed this trade show display for Appriss using Adobe Illustrator and Photoshop to create the large-scale print files the build required.",
+    image: cdn("3a2526c8047642c0b90a1352fff0cf4f"),
+    images: [
+      cdn("3a2526c8047642c0b90a1352fff0cf4f"),
+      cdn("930a1893400e41f1b590a1ef7554bab1"),
+      cdn("be6e5c09758a4a4a9ec8186f60ab6ad0"),
+      cdn("7575bb69631641f3b98af4ee69ea6589"),
+    ],
+  },
+  {
     slug: "northwind-brand-system",
     title: "Northwind Brand System",
     category: "Brand identity",
