@@ -19,6 +19,13 @@ const projects = [
       "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2Fd7986beb7cbb4baab6102cba8c2b32f8?format=webp&width=800&height=1200",
   },
   {
+    title: "Andrea Go Bowl T-Shirt",
+    category: "T-shirt design",
+    year: "",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F6724c11da5934bf0bdf7d01760a3876f?format=webp&width=800&height=1200",
+  },
+  {
     title: "Northwind Brand System",
     category: "Brand identity",
     year: "2026",
