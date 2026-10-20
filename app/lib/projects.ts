@@ -387,7 +387,7 @@ export const projects: Project[] = [
     category: "Trade show design",
     description:
       "This was a project that I completed during my time at Appriss for VINE (Victim Information and Notification Everyday). It is a 100% vector backdrop and tablecloth display that I created using Adobe Illustrator.",
-    image: cdn("b4268ab63bab49b2a0d96906c00caa4a"),
+    image: cdn("022ce1d6133e4593863145982c8d0a08"),
     images: [
       cdn("022ce1d6133e4593863145982c8d0a08"),
       cdn("b4268ab63bab49b2a0d96906c00caa4a"),
