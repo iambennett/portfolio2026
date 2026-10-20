@@ -116,6 +116,19 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "turning-around-turnaround-schools",
+    title: "Turning Around Turnaround Schools",
+    category: "Book cover design",
+    description:
+      "The project is a book cover that I designed for Turning Around Turnaround Schools. This book is about getting to the root causes of why schools fail, and how to turn them around. Find it on Amazon.com today.",
+    image: cdn("44f51eac3d93449e8d60a717454820ea"),
+    images: [
+      cdn("44f51eac3d93449e8d60a717454820ea"),
+      cdn("91a11f1b4bed4a07a54c47ba9c2b9fc4"),
+      cdn("6432c75480164b06b242e0165ceb1680"),
+    ],
+  },
+  {
     slug: "northwind-brand-system",
     title: "Northwind Brand System",
     category: "Brand identity",
