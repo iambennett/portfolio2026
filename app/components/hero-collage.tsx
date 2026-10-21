@@ -12,6 +12,7 @@ const images = [
 
 const columnCount = 10;
 const tilesPerColumn = 14;
+const fadeMask = "linear-gradient(to right, transparent 5%, black 75%)";
 const aspectRatios = ["3 / 4", "1 / 1", "4 / 5", "2 / 3", "5 / 4", "1 / 1", "3 / 5"];
 
 function pickRandom(source: string[]) {
@@ -31,7 +32,11 @@ export function HeroCollage() {
   }, []);
 
   return (
-    <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+    <div
+      aria-hidden="true"
+      className="pointer-events-none absolute inset-0 overflow-hidden"
+      style={{ maskImage: fadeMask, WebkitMaskImage: fadeMask }}
+    >
       <div
         className="absolute left-1/2 top-1/2 flex gap-5"
         style={{
@@ -62,7 +67,6 @@ export function HeroCollage() {
           </div>
         ))}
       </div>
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
     </div>
   );
 }
