@@ -44,7 +44,7 @@ export default function HomeRoute() {
 
   return (
     <div className="h-full min-h-0 flex-1 overflow-y-auto bg-background text-foreground">
-      <header className="sticky top-0 z-10 overflow-hidden border-b border-border/60 bg-background/80 backdrop-blur">
+      <header className="sticky top-0 z-10 overflow-hidden border-b border-border/60 bg-background/10 backdrop-blur">
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
           {headerImages.map((image, index) => (
             <div
@@ -57,7 +57,7 @@ export default function HomeRoute() {
               }}
             />
           ))}
-          <div className="absolute inset-0 bg-background/85" />
+          <div className="absolute inset-0 bg-background/10" />
         </div>
         <div className="relative mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#top" className="flex items-center">
