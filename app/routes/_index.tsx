@@ -2,7 +2,6 @@ import { IconArrowUpRight, IconMail } from "@tabler/icons-react";
 import { Link } from "react-router";
 import { HeroCollage } from "@/components/hero-collage";
 import { ProjectCard } from "@/components/project-card";
-import { ProjectGrid } from "@/components/project-grid";
 import { SiteHeader } from "@/components/site-header";
 import { projects } from "@/lib/projects";
 
@@ -24,6 +23,19 @@ const recentWorkSlugs = [
 
 const recentWork = projects.filter((project) =>
   recentWorkSlugs.includes(project.slug),
+);
+
+const selectedWorkSlugs = [
+  "before-the-applause",
+  "therapycon-25-raintree-users-conference",
+  "zirmed-trade-show-booth-design",
+  "educational-directions-website",
+  "javs-company-rebrand",
+  "hope-for-leaders-in-the-2020s",
+];
+
+const selectedWork = selectedWorkSlugs.flatMap((slug) =>
+  projects.filter((project) => project.slug === slug),
 );
 
 export default function HomeRoute() {
@@ -64,7 +76,23 @@ export default function HomeRoute() {
 
         <div className="relative bg-background">
         <section id="work" className="mx-auto max-w-6xl px-6 py-20">
-          <ProjectGrid />
+          <div className="mb-10 flex items-end justify-between">
+            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+              Selected work
+            </h2>
+            <Link
+              to="/work"
+              className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-opacity hover:opacity-80"
+            >
+              View all work
+              <IconArrowUpRight size={16} />
+            </Link>
+          </div>
+          <div className="grid gap-x-6 gap-y-12 md:grid-cols-3">
+            {selectedWork.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
         </section>
 
         <section id="about" className="mx-auto max-w-6xl px-6 py-20">
