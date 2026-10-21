@@ -1,4 +1,22 @@
-import { IconArrowUpRight, IconMail } from "@tabler/icons-react";
+import {
+  IconArrowUpRight,
+  IconBrandAdobeIllustrator,
+  IconBrandAdobeIndesign,
+  IconBrandAdobePhotoshop,
+  IconBrandGoogle,
+  IconBrandHtml5,
+  IconBrandOffice,
+  IconBrandOpenai,
+  IconBrandWindows,
+  IconBrandWordpress,
+  IconBox,
+  IconMail,
+  IconMicrophone,
+  IconPencil,
+  IconSparkles,
+  IconWaveSine,
+  type TablerIcon,
+} from "@tabler/icons-react";
 import { Link } from "react-router";
 import { HeroCollage } from "@/components/hero-collage";
 import { ProjectCard } from "@/components/project-card";
@@ -14,6 +32,40 @@ export function meta() {
     },
   ];
 }
+
+const capabilities = [
+  "Logos",
+  "Branding",
+  "Illustration",
+  "Business cards",
+  "Publications",
+  "Layout",
+  "Trade shows",
+  "Websites",
+  "Apparel",
+  "Packaging design",
+  "Direct mail",
+  "Email campaigns",
+  "Advertising",
+  "UX/UI",
+];
+
+const software: { name: string; icon: TablerIcon }[] = [
+  { name: "Adobe Photoshop", icon: IconBrandAdobePhotoshop },
+  { name: "Adobe Illustrator", icon: IconBrandAdobeIllustrator },
+  { name: "Adobe InDesign", icon: IconBrandAdobeIndesign },
+  { name: "Adobe Audition", icon: IconWaveSine },
+  { name: "WordPress", icon: IconBrandWordpress },
+  { name: "HTML/CSS", icon: IconBrandHtml5 },
+  { name: "Google Workspace", icon: IconBrandGoogle },
+  { name: "Microsoft Office", icon: IconBrandOffice },
+  { name: "Windows & Mac", icon: IconBrandWindows },
+  { name: "Builder.io", icon: IconBox },
+  { name: "Jasper", icon: IconPencil },
+  { name: "ChatGPT", icon: IconBrandOpenai },
+  { name: "Adobe Firefly", icon: IconSparkles },
+  { name: "Riverside Podcasting", icon: IconMicrophone },
+];
 
 const selectedWorkSlugs = [
   "before-the-applause",
@@ -114,6 +166,39 @@ export default function HomeRoute() {
                 View full resume
                 <IconArrowUpRight size={16} />
               </Link>
+            </div>
+          </div>
+        </section>
+
+        <section id="capabilities" className="mx-auto max-w-6xl px-6 py-20">
+          <div className="grid gap-12 md:grid-cols-2">
+            <div>
+              <h3 className="mb-8 text-xl font-semibold tracking-tight">
+                Design capabilities
+              </h3>
+              <ul className="flex flex-wrap gap-3">
+                {capabilities.map((capability) => (
+                  <li
+                    key={capability}
+                    className="rounded-full border border-border px-4 py-2 text-sm text-muted-foreground"
+                  >
+                    {capability}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="mb-8 text-xl font-semibold tracking-tight">
+                Software & tools
+              </h3>
+              <ul className="grid gap-4 sm:grid-cols-2">
+                {software.map(({ name, icon: Icon }) => (
+                  <li key={name} className="flex items-center gap-3 text-sm">
+                    <Icon size={22} className="shrink-0 text-primary" />
+                    {name}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </section>
