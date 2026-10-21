@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { SiteHeader } from "@/components/site-header";
 
 export function meta() {
   return [{ title: "Resume — Iam Bennett" }];
@@ -156,23 +156,7 @@ const skills = [
 export default function ResumeRoute() {
   return (
     <div className="h-full min-h-0 flex-1 overflow-y-auto bg-background text-foreground">
-      <header className="sticky top-0 z-10 border-b border-border/60 bg-background/80 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <Link to="/" className="flex items-center">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2Fbcb50ddddfe34df1833554796fdab2ea?format=webp&width=800&height=1200"
-              alt="Iam Bennett"
-              className="h-12 w-auto"
-            />
-          </Link>
-          <Link
-            to="/"
-            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Back to home
-          </Link>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main className="mx-auto max-w-4xl px-6 py-16">
         <h1 className="text-4xl font-semibold tracking-tight md:text-6xl">

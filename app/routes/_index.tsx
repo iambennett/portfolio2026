@@ -1,10 +1,10 @@
 import { IconArrowUpRight, IconMail } from "@tabler/icons-react";
 import { Link } from "react-router";
-import { useState } from "react";
 import { HeroCollage } from "@/components/hero-collage";
 import { ProjectCard } from "@/components/project-card";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { projects, projectTags, type ProjectTag } from "@/lib/projects";
+import { ProjectGrid } from "@/components/project-grid";
+import { SiteHeader } from "@/components/site-header";
+import { projects } from "@/lib/projects";
 
 export function meta() {
   return [
@@ -26,43 +26,10 @@ const recentWork = projects.filter((project) =>
   recentWorkSlugs.includes(project.slug),
 );
 
-const navLinks = [
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
-];
-
 export default function HomeRoute() {
-  const [activeTag, setActiveTag] = useState<ProjectTag | null>(null);
-  const visibleProjects = activeTag
-    ? projects.filter((project) => project.tags.includes(activeTag))
-    : projects;
-
   return (
     <div className="h-full min-h-0 flex-1 overflow-y-auto bg-background text-foreground">
-      <header className="sticky top-0 z-10 border-b border-border/60 bg-background/80">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="#top" className="flex items-center">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2Fbcb50ddddfe34df1833554796fdab2ea?format=webp&width=800&height=1200"
-              alt="Iam Bennett"
-              className="h-12 w-auto"
-            />
-          </a>
-          <nav className="flex items-center gap-6 text-sm text-muted-foreground">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="transition-colors hover:text-foreground"
-              >
-                {link.label}
-              </a>
-            ))}
-            <ThemeToggle />
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="top">
         <section className="relative isolate overflow-hidden">
@@ -97,39 +64,7 @@ export default function HomeRoute() {
 
         <div className="relative bg-background">
         <section id="work" className="mx-auto max-w-6xl px-6 py-20">
-          <div className="mb-6 flex items-end justify-between">
-            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-              Selected work
-            </h2>
-            <span className="text-sm text-muted-foreground">
-              {visibleProjects.length} projects
-            </span>
-          </div>
-          <div className="mb-10 flex flex-wrap gap-2">
-            {[null, ...projectTags].map((tag) => {
-              const isActive = activeTag === tag;
-              return (
-                <button
-                  key={tag ?? "all"}
-                  type="button"
-                  onClick={() => setActiveTag(tag)}
-                  aria-pressed={isActive}
-                  className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors ${
-                    isActive
-                      ? "border-primary bg-primary text-primary-foreground"
-                      : "border-border text-muted-foreground hover:bg-accent hover:text-foreground"
-                  }`}
-                >
-                  {tag ?? "All"}
-                </button>
-              );
-            })}
-          </div>
-          <div className="grid gap-x-6 gap-y-12 md:grid-cols-2">
-            {visibleProjects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
-            ))}
-          </div>
+          <ProjectGrid />
         </section>
 
         <section id="about" className="mx-auto max-w-6xl px-6 py-20">
