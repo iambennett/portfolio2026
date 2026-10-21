@@ -292,7 +292,7 @@ export const projects: Project[] = [
   },
   {
     slug: "hanna-the-best-so-far",
-    title: "Hanna - The Best So Far Album Design",
+    title: "Joe Hanna Album Art - Multiple Albums",
     category: "Album design",
     description:
       "I was blessed to get to work with music artist Joe Hanna on several previous albums, and I was thrilled to get to design his best of cover and inner artwork. Created with Adobe Illustrator and Photoshop.",
