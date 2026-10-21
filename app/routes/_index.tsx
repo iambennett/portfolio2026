@@ -15,16 +15,6 @@ export function meta() {
   ];
 }
 
-const recentWorkSlugs = [
-  "before-the-applause",
-  "appriss-choice-ui-design",
-  "chronic-illness-counseling-center",
-];
-
-const recentWork = projects.filter((project) =>
-  recentWorkSlugs.includes(project.slug),
-);
-
 const selectedWorkSlugs = [
   "before-the-applause",
   "therapycon-25-raintree-users-conference",
@@ -124,16 +114,6 @@ export default function HomeRoute() {
                 View full resume
                 <IconArrowUpRight size={16} />
               </Link>
-            </div>
-          </div>
-          <div className="md:col-span-2">
-            <h3 className="mb-8 text-xl font-semibold tracking-tight">
-              Recent work
-            </h3>
-            <div className="grid gap-x-6 gap-y-12 md:grid-cols-3">
-              {recentWork.map((project) => (
-                <ProjectCard key={project.slug} project={project} />
-              ))}
             </div>
           </div>
         </section>
