@@ -1,10 +1,21 @@
 const cdn = (id: string) =>
   `https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F${id}?format=webp&width=800&height=1200`;
 
+export type ProjectTag =
+  | "Logo & Branding"
+  | "Illustration"
+  | "Advertising"
+  | "Web Design"
+  | "Large Scale / Tradeshow"
+  | "Publication"
+  | "Layout"
+  | "Misc";
+
 export type Project = {
   slug: string;
   title: string;
   category: string;
+  tags: ProjectTag[];
   year?: string;
   image?: string;
   gradient?: string;
@@ -17,6 +28,7 @@ export const projects: Project[] = [
     slug: "american-boat-and-yacht",
     title: "American Boat & Yacht",
     category: "Website and brand identity",
+    tags: ["Web Design", "Logo & Branding"],
     image: cdn("d7986beb7cbb4baab6102cba8c2b32f8"),
     images: [
       cdn("d7986beb7cbb4baab6102cba8c2b32f8"),
@@ -29,6 +41,7 @@ export const projects: Project[] = [
     slug: "andrea-go-bowl-t-shirt",
     title: "Andrea Go Bowl T-Shirt",
     category: "T-shirt design",
+    tags: ["Illustration", "Misc"],
     description:
       "BJ Thorne, founder of the Arkansas Angels Pageant, approached me about a fundraiser she was organizing to benefit hydrocephalus awareness. The fundraiser was a bowling event, so I designed the shirt around a bowling theme, with a hand signing \"I love you\" in American Sign Language. The shirt was created in Adobe Illustrator.",
     image: cdn("6724c11da5934bf0bdf7d01760a3876f"),
@@ -43,6 +56,7 @@ export const projects: Project[] = [
     slug: "angels-pageant-system",
     title: "Angels Pageant System",
     category: "Branding and print",
+    tags: ["Logo & Branding", "Web Design", "Layout"],
     description:
       "The Angels Pageant System is a non-profit that puts on free pageants for children with disabilities. While volunteering with the organization, I created its branding, business cards, folders, brochures, websites, T-shirt graphics, and more.",
     image: cdn("5291385798ac45d98e0561878c6000bd"),
@@ -57,6 +71,7 @@ export const projects: Project[] = [
     slug: "appriss-corporate-site-redesign",
     title: "Appriss Corporate Site Redesign",
     category: "Website design and development",
+    tags: ["Web Design"],
     year: "2015",
     description:
       "This was a redesign of the Appriss.com corporate site. The company hosted the website internally and did not want any content management system running on its servers, so I hand coded everything in HTML and CSS. I also created all of the images for the site. The project spanned over 50 unique pages, and web traffic increased by 27% in the year following the update.",
@@ -74,6 +89,7 @@ export const projects: Project[] = [
     slug: "appriss-trade-show-display",
     title: "Appriss Trade Show Display",
     category: "Trade show design",
+    tags: ["Large Scale / Tradeshow"],
     description:
       "I designed this trade show display for Appriss using Adobe Illustrator and Photoshop to create the large-scale print files the build required.",
     image: cdn("3a2526c8047642c0b90a1352fff0cf4f"),
@@ -88,6 +104,7 @@ export const projects: Project[] = [
     slug: "art-in-speed-park",
     title: "Art in Speed Park",
     category: "WordPress website design",
+    tags: ["Web Design"],
     description:
       "Art in Speed Park is an annual art show in Speed Park, in southern Indiana. I built this website in WordPress and added custom code and CSS customizations so the site would stand out visually.",
     image: cdn("4a3a41ff1361435a88d7f718bf00d356"),
@@ -102,6 +119,7 @@ export const projects: Project[] = [
     slug: "before-the-applause",
     title: "Before the Applause",
     category: "Book illustration",
+    tags: ["Illustration", "Publication"],
     description:
       "This project is from the book, \"Before the Applause - Why Artists Need to be Good Project Managers.\" I was honored to be the illustrator for this book. The writers approached me and were very open to whatever ideas I had, so after a few rounds of sketches, we decided on some fun characters that represented different artistic ventures, and I started working in Illustrator to create the over 500 hand sketched images for this book. Find it now at Amazon.com!",
     image: cdn("dc043dfa1e194f8dbffc17cdbda7dc8b"),
@@ -126,6 +144,7 @@ export const projects: Project[] = [
     slug: "turning-around-turnaround-schools",
     title: "Turning Around Turnaround Schools",
     category: "Book cover design",
+    tags: ["Publication", "Layout"],
     description:
       "The project is a book cover that I designed for Turning Around Turnaround Schools. This book is about getting to the root causes of why schools fail, and how to turn them around. Find it on Amazon.com today.",
     image: cdn("44f51eac3d93449e8d60a717454820ea"),
@@ -139,6 +158,7 @@ export const projects: Project[] = [
     slug: "appriss-choice-ui-design",
     title: "CHOICE for Appriss",
     category: "UI design",
+    tags: ["Web Design"],
     description:
       "I designed the graphical user interface for CHOICE, a product for Appriss. I created it in Illustrator and Photoshop, and worked with the engineers at the company to export the necessary images, recreate the styles, and generate the animations needed for the user experience.",
     image: cdn("33aa0aaf7fbe47469ec1ad8b48d8c9cd"),
@@ -155,6 +175,7 @@ export const projects: Project[] = [
     slug: "chronic-illness-counseling-center",
     title: "Chronic Illness Counseling Center",
     category: "Branding and marketing",
+    tags: ["Logo & Branding", "Web Design", "Advertising"],
     description:
       "This is a branding project that I did for Chronic Illness Counseling Center. Created in Illustrator, the branding resembles a dandelion with petals floating off into the wind. I also created business cards, a website, and some marketing material for the company.",
     image: cdn("574783926607433890b3e818559157ac"),
@@ -169,6 +190,7 @@ export const projects: Project[] = [
     slug: "javs-direct-mail",
     title: "Justice AV Solutions Direct Mail",
     category: "Direct mail",
+    tags: ["Advertising", "Layout"],
     description:
       "This is a direct mail piece that I completed while working for Justice AV Solutions (JAVS). The mailing list was curated from web leads that we gathered after I integrated a marketing automation platform (Act-On) into the company website. This mailer was created in Adobe InDesign and Adobe Illustrator.",
     image: cdn("d5feedec14464fc8b16683ce9680b238"),
@@ -183,6 +205,7 @@ export const projects: Project[] = [
     slug: "educational-directions-sales-sheets",
     title: "Educational Directions Sales Sheets",
     category: "Sales collateral",
+    tags: ["Layout", "Advertising"],
     description:
       "This is a company sales sheet project that I completed for Educational Directions. I created it using Adobe Photoshop, Illustrator, and InDesign.",
     image: cdn("44965928790b4366b3c1a8df597b1b03"),
@@ -197,6 +220,7 @@ export const projects: Project[] = [
     slug: "graham-financial-services",
     title: "Graham Financial Services",
     category: "Branding and web design",
+    tags: ["Logo & Branding", "Web Design"],
     description:
       "Denise Graham, the owner, approached me about rebranding her company so that several smaller businesses could sit under one umbrella, Graham Financial Services. This project includes the logo for the main company and the D&G Tax & Financial Services branding and website. I created the branding and website elements in Adobe Photoshop and Illustrator, and built the website in WordPress.",
     image: cdn("2044f60f60c7424fb69b6f904ab8b3f6"),
@@ -211,6 +235,7 @@ export const projects: Project[] = [
     slug: "dynamic-wellness",
     title: "Dynamic Wellness",
     category: "Branding, print, and web design",
+    tags: ["Logo & Branding", "Layout", "Web Design"],
     description:
       "Dynamic Wellness had no branding and no website when I started working with the owner. Together we created the logo, business cards, sales sheets, folders, and other sales materials. This project also includes a rebrand of the initial website that I created for her. I used Photoshop and Illustrator for the branding and web imagery, and deployed the website through WordPress.",
     image: cdn("b3f942b45e3e40f8bda78fc652cad0cd"),
@@ -227,6 +252,7 @@ export const projects: Project[] = [
     slug: "educational-directions-rebrand",
     title: "Educational Directions Rebrand",
     category: "Branding",
+    tags: ["Logo & Branding", "Advertising"],
     description:
       "I have designed several iterations of logos for Educational Directions over the years, along with the branding that accompanied each version. This is the most recent branding for the company. I have also created its marketing materials, website, business cards, trade show displays, and direct and email marketing campaigns.",
     image: cdn("fe3740bd3c1f42829bf2db09162b9b48"),
@@ -240,6 +266,7 @@ export const projects: Project[] = [
     slug: "educational-directions-website",
     title: "Educational Directions Website",
     category: "Web design",
+    tags: ["Web Design", "Illustration"],
     description:
       "I designed the Educational Directions website in WordPress and created its graphic organizers, logos, and other site graphics. More recently, the team has integrated AI tools to help with blog posts and image creation for the site.",
     image: cdn("c914db390ae648efb77966d8e2e0a6df"),
@@ -254,6 +281,7 @@ export const projects: Project[] = [
     slug: "flex-av",
     title: "FLEX AV",
     category: "Branding and print",
+    tags: ["Logo & Branding", "Layout", "Large Scale / Tradeshow"],
     description:
       "FLEX AV is a brand of JAVS. I created the logo and branding for the line, along with marketing cut sheets and trade show displays. I used Illustrator, Photoshop, and InDesign to complete the work.",
     image: cdn("3f336e9d2ebe41ee8266726ac3326d70"),
@@ -272,6 +300,7 @@ export const projects: Project[] = [
     slug: "zirmed-focus-on-healthcare",
     title: "ZirMed Focus on Healthcare Booklet",
     category: "Illustration and layout",
+    tags: ["Illustration", "Layout", "Publication"],
     description:
       "I created this marketing booklet for ZirMed, which was meant to be fun, colorful, and engaging. I illustrated every image in it and designed the layout. I used Illustrator and InDesign to complete the project.",
     image: cdn("746abde2bae1407ebd223b402068b3a3"),
@@ -294,6 +323,7 @@ export const projects: Project[] = [
     slug: "hanna-the-best-so-far",
     title: "Joe Hanna Album Art - Multiple Albums",
     category: "Album design",
+    tags: ["Illustration", "Layout", "Misc"],
     description:
       "I was blessed to get to work with music artist Joe Hanna on several previous albums, and I was thrilled to get to design his best of cover and inner artwork. Created with Adobe Illustrator and Photoshop.",
     image: cdn("c3d792823aac46ed98ec7545c7652170"),
@@ -314,6 +344,7 @@ export const projects: Project[] = [
     slug: "zirmed-healthcare-challenges-infographic",
     title: "ZirMed - Healthcare Challenges Infographic",
     category: "Infographic",
+    tags: ["Illustration", "Advertising"],
     description:
       "I created this infographic for the marketing team at ZirMed. It was featured on their website and in a few email campaigns. I used Illustrator to create these graphics.",
     image: cdn("60acc6dbcdc24ce2bd2017e9ded79ee9"),
@@ -323,6 +354,7 @@ export const projects: Project[] = [
     slug: "hope-for-leaders-in-the-2020s",
     title: "HOPE for Leaders in the 2020's",
     category: "Book design",
+    tags: ["Illustration", "Publication"],
     description:
       "This is a book that I had the pleasure of working with Hope Zoeller, the author on. She initially asked me to work up some graphics for the inside of the book, but then also asked me to design the cover to match. I created these designs in Adobe Illustrator.",
     image: cdn("8ef944e3f81e4288b17a79aac355321c"),
@@ -343,6 +375,7 @@ export const projects: Project[] = [
     slug: "javs-company-rebrand",
     title: "JAVS Company Rebrand",
     category: "Branding",
+    tags: ["Logo & Branding"],
     description:
       "I was brought into JAVS specifically to help jumpstart a new marketing department. We began with a company rebrand. I was asked to take the current logo and give it a tech savvy update. I used Illustrator to accomplish this logo.",
     image: cdn("a060bb5d721d44b893506f194c506d5a"),
@@ -356,6 +389,7 @@ export const projects: Project[] = [
     slug: "therapycon-25-raintree-users-conference",
     title: "TherapyCon '25 - Raintree Users' Conference",
     category: "Event design",
+    tags: ["Large Scale / Tradeshow", "Layout", "Publication"],
     description:
       "I was asked to create all of the show graphics, signage, name badges, program, prospectus, and more for the Raintree Annual Users' Conference called TherapyCon. This was a huge project, and was an absolute blast to work on. The materials include room signs, floor displays, large backdrops, registration tables, event markers, and general signage.",
     image: cdn("5413a5e49d814660a6a273bd2aeff35f"),
@@ -392,6 +426,7 @@ export const projects: Project[] = [
     slug: "vine-trade-show-display",
     title: "VINE Trade Show Display",
     category: "Trade show design",
+    tags: ["Large Scale / Tradeshow"],
     description:
       "This was a project that I completed during my time at Appriss for VINE (Victim Information and Notification Everyday). It is a 100% vector backdrop and tablecloth display that I created using Adobe Illustrator.",
     image: cdn("022ce1d6133e4593863145982c8d0a08"),
@@ -406,6 +441,7 @@ export const projects: Project[] = [
     slug: "javs-website-redesign",
     title: "JAVS Website",
     category: "Web design",
+    tags: ["Web Design"],
     description:
       "While working at JAVS, I was asked to redesign the entire website from the ground up. We came up with new navigation, an entirely new design, and deployed it in under 6 months. Later, I was in charge of connecting this website to our marketing automation platform in order to better track and score users, collect leads through forms, and contact them using captured email and contact data.",
     image: cdn("f672bc67d9444f0cbe3146f64955d77b"),
@@ -419,6 +455,7 @@ export const projects: Project[] = [
     slug: "javs-various-advertisements",
     title: "JAVS - Various Advertisements",
     category: "Advertising",
+    tags: ["Advertising"],
     description:
       "While at JAVS, I had the opportunity to create several ads for industry publications, trade show advertisements, and more. Here is a selection of those.",
     image: cdn("f96a77d71da74d9990f89a37bd65bd50"),
@@ -440,6 +477,7 @@ export const projects: Project[] = [
     slug: "zirmed-trade-show-booth-design",
     title: "ZirMed Trade Show Booth Design",
     category: "Trade show design",
+    tags: ["Large Scale / Tradeshow", "Illustration"],
     description:
       "ZirMed approached me and asked if I could make the graphics for a trade show display that they were purchasing. I worked with their marketing department to match their style guide and achieve the look they were going for. All of the images and patterns were drawn by me.",
     image: cdn("6babf1fc5a524b7b9ef236ddfb355f24"),

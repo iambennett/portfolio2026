@@ -18,7 +18,7 @@ export function ProjectCard({ project }: { project: Project }) {
       <div className="mt-4 flex items-start justify-between gap-4">
         <div>
           <h3 className="font-medium">{project.title}</h3>
-          <p className="text-sm text-muted-foreground">{project.category}</p>
+          <p className="text-sm text-muted-foreground">{project.tags.join(" · ")}</p>
         </div>
         {project.year && (
           <span className="text-sm text-muted-foreground">{project.year}</span>
