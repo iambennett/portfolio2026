@@ -72,8 +72,13 @@ export default function HomeRoute() {
             Your design challenge has a <span className="text-primary">solution.</span> Let's find it <span className="text-primary">together.</span>
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            I'm Iam, a designer working across brand identity, digital
-            products, and editorial. Here's a selection of recent work.
+            I'm Iam Bennett, a marketing director and multimedia designer
+            who loves solving creative challenges. Give me a client goal and
+            a blank canvas, and I'll find a smart, memorable way to get
+            there. I serve as Director of Operations & Marketing for
+            Educational Directions, LLC, in Louisville, Kentucky, where I
+            help keep the work running smoothly and the brand looking sharp.
+            I also run a freelance marketing practice.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <a
@@ -136,15 +141,6 @@ export default function HomeRoute() {
               About
             </h2>
             <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
-              <p>
-                I'm Iam Bennett, a marketing director and multimedia designer
-                who loves solving creative challenges. Give me a client goal and
-                a blank canvas, and I'll find a smart, memorable way to get
-                there. I serve as Director of Operations & Marketing for
-                Educational Directions, LLC, in Louisville, Kentucky, where I
-                help keep the work running smoothly and the brand looking sharp.
-                I also run a freelance marketing practice.
-              </p>
               <p>
                 I have more than 25 years of experience helping companies across
                 the United States strengthen their brands and stand out through
