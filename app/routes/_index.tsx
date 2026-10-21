@@ -97,9 +97,16 @@ export default function HomeRoute() {
 
         <section id="about" className="mx-auto max-w-6xl px-6 py-20">
           <div className="grid gap-10 md:grid-cols-[1fr_2fr]">
-            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-              About
-            </h2>
+            <div>
+              <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+                About Me
+              </h2>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2Fda1b5357d95e4bb7956f6983f8ef05d2?format=webp&width=800&height=1200"
+                alt="Illustration of Iam Bennett"
+                className="mt-8 w-full max-w-xs rounded-xl"
+              />
+            </div>
             <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
                 I have more than 25 years of experience helping companies across
