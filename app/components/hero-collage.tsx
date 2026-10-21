@@ -35,7 +35,7 @@ export function HeroCollage() {
     <div
       aria-hidden="true"
       className="pointer-events-none fixed inset-0 overflow-hidden"
-      style={{ maskImage: fadeMask, WebkitMaskImage: fadeMask, opacity: 0.5 }}
+      style={{ maskImage: fadeMask, WebkitMaskImage: fadeMask, opacity: 0.2 }}
     >
       <div
         className="absolute left-1/2 top-1/2 flex gap-5"
