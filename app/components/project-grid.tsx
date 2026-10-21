@@ -2,11 +2,15 @@ import { useState } from "react";
 import { ProjectCard } from "@/components/project-card";
 import { projects, projectTags, type ProjectTag } from "@/lib/projects";
 
+const projectsByPictureCount = [...projects].sort(
+  (a, b) => (b.images?.length ?? 0) - (a.images?.length ?? 0),
+);
+
 export function ProjectGrid() {
   const [activeTag, setActiveTag] = useState<ProjectTag | null>(null);
   const visibleProjects = activeTag
-    ? projects.filter((project) => project.tags.includes(activeTag))
-    : projects;
+    ? projectsByPictureCount.filter((project) => project.tags.includes(activeTag))
+    : projectsByPictureCount;
 
   return (
     <>
