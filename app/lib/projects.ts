@@ -1,15 +1,18 @@
 const cdn = (id: string) =>
   `https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F${id}?format=webp&width=800&height=1200`;
 
-export type ProjectTag =
-  | "Logo & Branding"
-  | "Illustration"
-  | "Advertising"
-  | "Web Design"
-  | "Large Scale / Tradeshow"
-  | "Publication"
-  | "Layout"
-  | "Misc";
+export const projectTags = [
+  "Logo & Branding",
+  "Illustration",
+  "Advertising",
+  "Web Design",
+  "Large Scale / Tradeshow",
+  "Publication",
+  "Layout",
+  "Misc",
+] as const;
+
+export type ProjectTag = (typeof projectTags)[number];
 
 export type Project = {
   slug: string;

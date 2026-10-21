@@ -1,9 +1,10 @@
 import { IconArrowUpRight, IconMail } from "@tabler/icons-react";
 import { Link } from "react-router";
+import { useState } from "react";
 import { HeroCollage } from "@/components/hero-collage";
 import { ProjectCard } from "@/components/project-card";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { projects } from "@/lib/projects";
+import { projects, projectTags, type ProjectTag } from "@/lib/projects";
 
 export function meta() {
   return [
@@ -32,6 +33,11 @@ const navLinks = [
 ];
 
 export default function HomeRoute() {
+  const [activeTag, setActiveTag] = useState<ProjectTag | null>(null);
+  const visibleProjects = activeTag
+    ? projects.filter((project) => project.tags.includes(activeTag))
+    : projects;
+
   return (
     <div className="h-full min-h-0 flex-1 overflow-y-auto bg-background text-foreground">
       <header className="sticky top-0 z-10 border-b border-border/60 bg-background/80 backdrop-blur">
@@ -88,16 +94,36 @@ export default function HomeRoute() {
         </section>
 
         <section id="work" className="mx-auto max-w-6xl px-6 py-20">
-          <div className="mb-10 flex items-end justify-between">
+          <div className="mb-6 flex items-end justify-between">
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
               Selected work
             </h2>
             <span className="text-sm text-muted-foreground">
-              {projects.length} projects
+              {visibleProjects.length} projects
             </span>
           </div>
+          <div className="mb-10 flex flex-wrap gap-2">
+            {[null, ...projectTags].map((tag) => {
+              const isActive = activeTag === tag;
+              return (
+                <button
+                  key={tag ?? "all"}
+                  type="button"
+                  onClick={() => setActiveTag(tag)}
+                  aria-pressed={isActive}
+                  className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors ${
+                    isActive
+                      ? "border-primary bg-primary text-primary-foreground"
+                      : "border-border text-muted-foreground hover:bg-accent hover:text-foreground"
+                  }`}
+                >
+                  {tag ?? "All"}
+                </button>
+              );
+            })}
+          </div>
           <div className="grid gap-x-6 gap-y-12 md:grid-cols-2">
-            {projects.map((project) => (
+            {visibleProjects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
           </div>
