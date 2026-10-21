@@ -75,10 +75,7 @@ export default function HomeRoute() {
             I'm Iam Bennett, a marketing director and multimedia designer
             who loves solving creative challenges. Give me a client goal and
             a blank canvas, and I'll find a smart, memorable way to get
-            there. I serve as Director of Operations & Marketing for
-            Educational Directions, LLC, in Louisville, Kentucky, where I
-            help keep the work running smoothly and the brand looking sharp.
-            I also run a freelance marketing practice.
+            there.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <a
