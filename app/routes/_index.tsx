@@ -111,6 +111,7 @@ export default function HomeRoute() {
           </div>
         </section>
 
+        <div className="relative bg-background">
         <section id="work" className="mx-auto max-w-6xl px-6 py-20">
           <div className="mb-6 flex items-end justify-between">
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
@@ -215,6 +216,7 @@ export default function HomeRoute() {
             <span>Designed in Fusion</span>
           </footer>
         </section>
+        </div>
       </main>
     </div>
   );
