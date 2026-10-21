@@ -40,7 +40,7 @@ export default function HomeRoute() {
 
   return (
     <div className="h-full min-h-0 flex-1 overflow-y-auto bg-background text-foreground">
-      <header className="sticky top-0 z-10 border-b border-border/60 bg-background">
+      <header className="sticky top-0 z-10 border-b border-border/60 bg-background/80">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#top" className="flex items-center">
             <img
