@@ -28,7 +28,7 @@ export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
-const THEME_INIT_SCRIPT = getThemeInitScript();
+const THEME_INIT_SCRIPT = getThemeInitScript("dark");
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
