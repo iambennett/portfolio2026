@@ -69,7 +69,7 @@ export default function HomeRoute() {
           <HeroCollage />
           <div className="relative mx-auto max-w-6xl px-6 pb-20 pt-24 md:pt-32">
           <h1 className="max-w-3xl text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl">
-            Designing brands and products that feel <span className="text-primary">alive.</span>
+            Your design challenge has a <span className="text-primary">solution.</span> Let's find it <span className="text-primary">together.</span>
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
             I'm Iam, a designer working across brand identity, digital
