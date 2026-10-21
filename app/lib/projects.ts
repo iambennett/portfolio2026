@@ -415,4 +415,25 @@ export const projects: Project[] = [
       cdn("6d339ca4772048839398e0803c7fd104"),
     ],
   },
+  {
+    slug: "javs-various-advertisements",
+    title: "JAVS - Various Advertisements",
+    category: "Advertising",
+    description:
+      "While at JAVS, I had the opportunity to create several ads for industry publications, trade show advertisements, and more. Here is a selection of those.",
+    image: cdn("f96a77d71da74d9990f89a37bd65bd50"),
+    images: [
+      cdn("f96a77d71da74d9990f89a37bd65bd50"),
+      cdn("71bf96199e654332a30628f6bfb4938d"),
+      cdn("40987985339c4b35aa5dd60f31b4b808"),
+      cdn("4e82fb0bbfb54f7cb749ae58e2136457"),
+      cdn("5b781e2325bc4837b00c1d332c2772b4"),
+      cdn("ea95ef9a5fee442ab481e5026f7ce2af"),
+      cdn("f0fdf74159094db386ad4ae26092abf1"),
+      cdn("451e2a418b484abc86474edd615e1360"),
+      cdn("417726d99afd43568fb0d80102f3b5e9"),
+      cdn("df674d44d6174fedb5f1828ca989dbe1"),
+      cdn("c5fa50455f8c4cedae6bd2ebd0c5ddc7"),
+    ],
+  },
 ];
