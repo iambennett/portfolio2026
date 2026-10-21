@@ -10,59 +10,59 @@ const images = [
   ),
 ];
 
-const tiles = [
-  { col: 1, row: 1, cols: 3, rows: 3 },
-  { col: 4, row: 1, cols: 2, rows: 2 },
-  { col: 6, row: 1, cols: 3, rows: 2 },
-  { col: 4, row: 3, cols: 2, rows: 2 },
-  { col: 6, row: 3, cols: 2, rows: 3 },
-  { col: 8, row: 3, cols: 1, rows: 3 },
-  { col: 1, row: 4, cols: 3, rows: 2 },
-  { col: 4, row: 5, cols: 2, rows: 2 },
-  { col: 1, row: 6, cols: 3, rows: 3 },
-  { col: 6, row: 6, cols: 3, rows: 3 },
-  { col: 4, row: 7, cols: 2, rows: 2 },
-];
+const columnCount = 10;
+const tilesPerColumn = 14;
+const aspectRatios = ["3 / 4", "1 / 1", "4 / 5", "2 / 3", "5 / 4", "1 / 1", "3 / 5"];
 
-function pickRandom(source: string[], count: number) {
+function pickRandom(source: string[]) {
   const shuffled = [...source];
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
-  return shuffled.slice(0, count);
+  return shuffled;
 }
 
 export function HeroCollage() {
-  const [tileImages, setTileImages] = useState(() => images.slice(0, tiles.length));
+  const [pool, setPool] = useState(images);
 
   useEffect(() => {
-    setTileImages(pickRandom(images, tiles.length));
+    setPool(pickRandom(images));
   }, []);
 
   return (
     <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
       <div
-        className="absolute left-1/2 top-1/2 grid grid-cols-8 grid-rows-8 gap-3"
+        className="absolute left-1/2 top-1/2 flex gap-5"
         style={{
           width: "max(150vw, 150vh)",
           height: "max(150vw, 150vh)",
           transform: "translate(-50%, -50%) rotate(45deg)",
         }}
       >
-        {tiles.map((tile, index) => (
+        {Array.from({ length: columnCount }, (_, column) => (
           <div
-            key={index}
-            className="rounded-2xl bg-cover bg-center"
-            style={{
-              gridColumn: `${tile.col} / span ${tile.cols}`,
-              gridRow: `${tile.row} / span ${tile.rows}`,
-              backgroundImage: `url(${tileImages[index]})`,
-            }}
-          />
+            key={column}
+            className="flex flex-1 flex-col gap-5"
+            style={{ marginTop: column % 2 ? "-6rem" : 0 }}
+          >
+            {Array.from({ length: tilesPerColumn }, (_, row) => {
+              const index = column * tilesPerColumn + row;
+              return (
+                <div
+                  key={row}
+                  className="w-full rounded-2xl bg-cover bg-center"
+                  style={{
+                    aspectRatio: aspectRatios[(column * 3 + row * 5) % aspectRatios.length],
+                    backgroundImage: `url(${pool[index % pool.length]})`,
+                  }}
+                />
+              );
+            })}
+          </div>
         ))}
       </div>
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
     </div>
   );
 }
