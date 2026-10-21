@@ -26,10 +26,6 @@ const recentWork = projects.filter((project) =>
   recentWorkSlugs.includes(project.slug),
 );
 
-const headerImages = projects
-  .flatMap((project) => (project.image ? [project.image] : []))
-  .filter((_, index) => index % 3 === 0);
-
 const navLinks = [
   { label: "Work", href: "#work" },
   { label: "About", href: "#about" },
@@ -44,22 +40,8 @@ export default function HomeRoute() {
 
   return (
     <div className="h-full min-h-0 flex-1 overflow-y-auto bg-background text-foreground">
-      <header className="sticky top-0 z-10 overflow-hidden border-b border-border/60 bg-background/10 backdrop-blur">
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-          {headerImages.map((image, index) => (
-            <div
-              key={image}
-              className="absolute inset-y-0 bg-cover bg-center opacity-30"
-              style={{
-                left: `${(index / headerImages.length) * 100}%`,
-                width: `${100 / headerImages.length}%`,
-                backgroundImage: `url(${image})`,
-              }}
-            />
-          ))}
-          <div className="absolute inset-0 bg-background/10" />
-        </div>
-        <div className="relative mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <header className="sticky top-0 z-10 border-b border-border/60 bg-background">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#top" className="flex items-center">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2Fbcb50ddddfe34df1833554796fdab2ea?format=webp&width=800&height=1200"
