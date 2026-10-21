@@ -117,21 +117,19 @@ export default function HomeRoute() {
                   marketing starts with understanding the people you want to reach.
                 </p>
               </div>
-            </div>
-          </div>
-          <div className="md:col-span-2">
-            <div className="mb-8 flex items-end justify-between">
-              <h3 className="text-xl font-semibold tracking-tight">
-                Recent work
-              </h3>
               <Link
                 to="/resume"
-                className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-opacity hover:opacity-80"
+                className="mt-8 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
               >
                 View full resume
                 <IconArrowUpRight size={16} />
               </Link>
             </div>
+          </div>
+          <div className="md:col-span-2">
+            <h3 className="mb-8 text-xl font-semibold tracking-tight">
+              Recent work
+            </h3>
             <div className="grid gap-x-6 gap-y-12 md:grid-cols-3">
               {recentWork.map((project) => (
                 <ProjectCard key={project.slug} project={project} />
