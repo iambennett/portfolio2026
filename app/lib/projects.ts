@@ -436,4 +436,21 @@ export const projects: Project[] = [
       cdn("c5fa50455f8c4cedae6bd2ebd0c5ddc7"),
     ],
   },
+  {
+    slug: "zirmed-trade-show-booth-design",
+    title: "ZirMed Trade Show Booth Design",
+    category: "Trade show design",
+    description:
+      "ZirMed approached me and asked if I could make the graphics for a trade show display that they were purchasing. I worked with their marketing department to match their style guide and achieve the look they were going for. All of the images and patterns were drawn by me.",
+    image: cdn("d692f25b0c524d478fa2370792df3180"),
+    images: [
+      cdn("d692f25b0c524d478fa2370792df3180"),
+      cdn("4c611c7b66664d07a597273cda5368f6"),
+      cdn("ff9c6bb7b85e41af8d0d6742393bc648"),
+      cdn("8126f1352e3f48b1ba392acc6713730a"),
+      cdn("5000f8ae8c5c499ebfed497d94bd31f6"),
+      cdn("85912782a3d044259fbac0954041c0d1"),
+      cdn("32ef3658874d4c07a335916978f422b3"),
+    ],
+  },
 ];
