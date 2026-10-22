@@ -533,4 +533,28 @@ export const projects: Project[] = [
       cdn("32ef3658874d4c07a335916978f422b3"),
     ],
   },
+  {
+    slug: "louisville-male-marching-band-props",
+    title: "Louisville Male Marching Band - Props",
+    category: "Marching band props",
+    tags: ["Illustration", "Large Scale / Tradeshow"],
+    description:
+      "I am a band dad, and the 2026 show for Louisville Male High School was titled \"Like a Moth to a Flame,\" a song from Stravinsky. I was responsible for creating the ideas for the moths. I sketched them out in Illustrator and created them with wood, polystyrene foam, paint, and Velcro. The largest moth was over 11 feet tall when complete.",
+    image: cdn("65e7a2368b7e45e9be54f7a4f1829765"),
+    images: [
+      cdn("65e7a2368b7e45e9be54f7a4f1829765"),
+      cdn("a76bccb4e699439cb91542db2e390ded"),
+      cdn("e03ad3b13bc24a1a83f3867b5f61da27"),
+      cdn("cafbc87064b542d5a7b37eb65b6734d6"),
+      cdn("58fdb0d6335441aeb9e49f7fa18e0afd"),
+      cdn("221195e3a5cf4788b47957d64c9bd606"),
+      cdn("75ead920509f48d48dd416a940651af4"),
+      cdn("197c0a674fe34ef7a9ca30732c164e64"),
+      cdn("eceefd3b36e74fd588728d4643c0dbda"),
+      cdn("158167f929bd4f058f24cba55d6e2eca"),
+      cdn("9171404cbe114420b5e042d0aed1df58"),
+      cdn("6b4d2de571ee4d259b930a6e1d22e2c1"),
+      cdn("6a3950bb7ffb4981979584528a87a1ce"),
+    ],
+  },
 ];
