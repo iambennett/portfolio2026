@@ -4,7 +4,6 @@ import { ThemeToggle } from "@/components/theme-toggle";
 const navLinks = [
   { label: "Work", to: "/work" },
   { label: "About", to: "/resume" },
-  { label: "Contact", to: "/contact" },
 ];
 
 export function SiteHeader() {
