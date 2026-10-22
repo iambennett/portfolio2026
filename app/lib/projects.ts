@@ -596,4 +596,21 @@ export const projects: Project[] = [
       cdn("1dbc7fa5181a4317baa41e2d4964f871"),
     ],
   },
+  {
+    slug: "mobile-patrol-logo",
+    title: "Mobile Patrol Logo",
+    category: "Logo design",
+    tags: ["Logo & Branding"],
+    description:
+      "While at Appriss we created an app called MobilePatrol. It was a public safety app aimed at connecting neighborhoods to safety data and information. I created this logo with Adobe Illustrator.",
+    image: cdn("c5aba23ada2c411d9a16143978700361"),
+    images: [
+      cdn("c5aba23ada2c411d9a16143978700361"),
+      cdn("94a82cf40e1b454195f63ff9ca07df9b"),
+      cdn("47b90654bad047a5b60a198fd5f31e1d"),
+      cdn("b4d3e107b41149349b4755007363c246"),
+      cdn("4f89af9bb6fc4ed0917e83d10d4aac51"),
+      cdn("34cca3096c024ddca1a7c085e55fb45f"),
+    ],
+  },
 ];
