@@ -557,4 +557,22 @@ export const projects: Project[] = [
       cdn("6b4d2de571ee4d259b930a6e1d22e2c1"),
     ],
   },
+  {
+    slug: "nextech-edge-conference-booklet",
+    title: "Nextech EDGE Conference Booklet",
+    category: "Conference booklet",
+    tags: ["Layout", "Publication"],
+    description:
+      "Nextech needed a conference booklet for their annual EDGE conference. I worked directly with their marketing department and event planner to design this booklet. I used a combination of Photoshop, Illustrator, and InDesign to accomplish this.",
+    image: cdn("ff95071cb46047cda78d5f4f86258663"),
+    images: [
+      cdn("ff95071cb46047cda78d5f4f86258663"),
+      cdn("6c6c2c7678dc4d85b8d54b2e90842f2d"),
+      cdn("229084f379d646beac1a5f282a09bff3"),
+      cdn("2ef8fd09e1e643d1935198ef378ee99d"),
+      cdn("831045956cd4486cbce464707bc070f9"),
+      cdn("e98df6c710a84abd8e62a384d8a14535"),
+      cdn("229153f310ef4a5fbe046ffeba827ea0"),
+    ],
+  },
 ];
