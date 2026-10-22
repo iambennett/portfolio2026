@@ -521,9 +521,9 @@ export const projects: Project[] = [
     image: cdn("6babf1fc5a524b7b9ef236ddfb355f24"),
     images: [
       cdn("6babf1fc5a524b7b9ef236ddfb355f24"),
-      cdn("8ea0997cda314d30bc717cf0cde09597"),
+      "/images/zirmed/zirmed-booth-photo-2.jpg",
       cdn("7ba620b7c6d0483f89bb280ab6b19a67"),
-      cdn("b897d3609af44ca5b32bcf96c2c02680"),
+      "/images/zirmed/zirmed-booth-photo-4.jpg",
       cdn("d692f25b0c524d478fa2370792df3180"),
       cdn("4c611c7b66664d07a597273cda5368f6"),
       cdn("ff9c6bb7b85e41af8d0d6742393bc648"),
