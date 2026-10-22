@@ -560,7 +560,7 @@ export const projects: Project[] = [
     category: "Conference booklet",
     tags: ["Layout", "Publication", "Large Scale / Tradeshow"],
     description:
-      "Nextech needed a conference booklet for their annual EDGE conference. I worked directly with their marketing department and event planner to design this booklet. I used a combination of Photoshop, Illustrator, and InDesign to accomplish this.",
+      "Nextech needed some graphic support for their Annual Users' Conference, and they approached me about working on their prospectus, show booklet, and event signage. I used Photoshop, Illustrator and InDesign mainly on this project.",
     image: cdn("ff95071cb46047cda78d5f4f86258663"),
     images: [
       cdn("ff95071cb46047cda78d5f4f86258663"),
