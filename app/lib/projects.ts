@@ -621,4 +621,19 @@ export const projects: Project[] = [
       cdn("19956a5045774612b16ef425c84617d0"),
     ],
   },
+  {
+    slug: "dynamic-wellness-logo-and-website-design",
+    title: "Dynamic Wellness Logo and Website Design",
+    category: "Logo and website design",
+    tags: ["Web Design", "Logo & Branding"],
+    image: cdn("24a32e48ca45425baee562de1e04b3f5"),
+    images: [
+      cdn("24a32e48ca45425baee562de1e04b3f5"),
+      cdn("38b6301c21f947d5a949fd32922a8944"),
+      cdn("9da04cf3aab3421c9ae33cec19e340bd"),
+      cdn("d7deede791904a51acb24626be851ee9"),
+      cdn("edec76cba7b2424986ffe2562506cd4f"),
+      cdn("c31bd621ca2e4f00a6a4f656497c3543"),
+    ],
+  },
 ];
