@@ -660,4 +660,22 @@ export const projects: Project[] = [
       cdn("02178d1db3d043498fcf3026b90ab86e"),
     ],
   },
+  {
+    slug: "proactive-consulting-logo-and-branding",
+    title: "ProActive Consulting Logo and Branding",
+    category: "Logo and branding",
+    tags: ["Logo & Branding", "Layout"],
+    description:
+      "ProActive is a data and analytics company that focuses on employee data and HR improvement.",
+    image: cdn("06ab6985b36548f9b246a815b8f272e3"),
+    images: [
+      cdn("06ab6985b36548f9b246a815b8f272e3"),
+      cdn("da7a52b6eb884d20aacff39776f7205e"),
+      cdn("52d4ba25557a46058c27290a8f032fea"),
+      cdn("82a1ee96c7ce4a6c94fbe7e34485682c"),
+      cdn("c2a32bb6ec404f639a63c0ec9393dbf3"),
+      cdn("c345cddb26fa4a7da0674fc48a253030"),
+      cdn("5305350a4b004814a6f697d6055023ca"),
+    ],
+  },
 ];
