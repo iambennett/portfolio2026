@@ -575,4 +575,25 @@ export const projects: Project[] = [
       cdn("229153f310ef4a5fbe046ffeba827ea0"),
     ],
   },
+  {
+    slug: "appriss-corporate-site-redesign-2007",
+    title: "Appriss Corporate Site Redesign 2007",
+    category: "Website design and development",
+    tags: ["Web Design"],
+    description:
+      "I had the pleasure of redesigning the Appriss website more than once during my 10 years at the company. This was the first in 2007. All hand coded, images all created by me. I used Adobe Dreamweaver, and Komodo to code the pages and Photoshop to come up with graphics.",
+    image: cdn("28355b7d62c54d80a5eed7c0face55c8"),
+    images: [
+      cdn("28355b7d62c54d80a5eed7c0face55c8"),
+      cdn("31178170d7ac476db3876b88620138f5"),
+      cdn("44ddd46be57446e6aa6e9c293a95a482"),
+      cdn("8a8998030bc74c6ab5e69c638181adff"),
+      cdn("0907884dc2d74b3fb446c51d1db6749e"),
+      cdn("c4605dae9e014649b176649af4f342c5"),
+      cdn("3630352eee294fe2a370a6feee32304d"),
+      cdn("f0538fd293eb48fcb5b7f7859c4f8fea"),
+      cdn("6a5bb575a86f455cbe977f624b0aafb1"),
+      cdn("1dbc7fa5181a4317baa41e2d4964f871"),
+    ],
+  },
 ];
