@@ -613,4 +613,15 @@ export const projects: Project[] = [
       cdn("4f89af9bb6fc4ed0917e83d10d4aac51"),
     ],
   },
+  {
+    slug: "new-legacy-logo",
+    title: "New Legacy Logo",
+    category: "Logo design",
+    tags: ["Logo & Branding"],
+    image: cdn("4c2178350cba4951af3e231ecc903927"),
+    images: [
+      cdn("4c2178350cba4951af3e231ecc903927"),
+      cdn("19956a5045774612b16ef425c84617d0"),
+    ],
+  },
 ];
