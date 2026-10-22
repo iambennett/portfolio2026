@@ -239,6 +239,25 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "growing-forward-graphic-organizers",
+    title: "Growing Forward Services - Graphic Organizers",
+    category: "Graphic organizers",
+    tags: ["Illustration", "Logo & Branding"],
+    description:
+      "These are some graphic organizers that I created for Growing Forward Services, a company focused on leadership enhancement and professional development. They had information sheets with all of this information, but needed simple, boiled-down graphics to represent the ideas in sales decks and presentations. I used Adobe Illustrator to create these.",
+    image: cdn("ad8bf12e5ad943dfb628ee47ce61a5fa"),
+    images: [
+      cdn("ad8bf12e5ad943dfb628ee47ce61a5fa"),
+      cdn("ec55be8b2dad47aaa31002f773d63b35"),
+      cdn("df3c492f8059412ca6985b92486b6c32"),
+      cdn("e9285825c57a49b29003b5ac5fd5dc89"),
+      cdn("bfd83b2ebb1b4c4684b0a8794430de51"),
+      cdn("ff6ba742029846099ea9d07369707734"),
+      cdn("5099b5bc4e81460698d8434620ecc46d"),
+      cdn("7496d57f15904d9aa8d926b41299ccff"),
+    ],
+  },
+  {
     slug: "graham-financial-services",
     title: "Graham Financial Services",
     category: "Branding and web design",
