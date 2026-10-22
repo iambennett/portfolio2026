@@ -557,7 +557,7 @@ export const projects: Project[] = [
   {
     slug: "nextech-edge-conference-booklet",
     title: "Nextech EDGE Conference",
-    category: "Conference booklet",
+    category: "Conference graphic support",
     tags: ["Layout", "Publication", "Large Scale / Tradeshow"],
     description:
       "Nextech needed some graphic support for their Annual Users' Conference, and they approached me about working on their prospectus, show booklet, and event signage. I used Photoshop, Illustrator and InDesign mainly on this project.",
