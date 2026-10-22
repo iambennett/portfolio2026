@@ -667,7 +667,7 @@ export const projects: Project[] = [
     tags: ["Logo & Branding", "Layout"],
     description:
       "ProActive is a data and analytics company that focuses on employee data and HR improvement.",
-    image: cdn("06ab6985b36548f9b246a815b8f272e3"),
+    image: cdn("5305350a4b004814a6f697d6055023ca"),
     images: [
       cdn("06ab6985b36548f9b246a815b8f272e3"),
       cdn("da7a52b6eb884d20aacff39776f7205e"),
