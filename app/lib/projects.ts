@@ -641,4 +641,20 @@ export const projects: Project[] = [
       cdn("c31bd621ca2e4f00a6a4f656497c3543"),
     ],
   },
+  {
+    slug: "naval-medical-center-portsmouth",
+    title: "Naval Medical Center Portsmouth",
+    category: "T-shirt design",
+    tags: ["Illustration", "Misc"],
+    description:
+      "I was asked to create a shirt graphic for a NICU center annual reunion, where premature infants born and treated in the unit get to come back and meet the nurses that helped them. I was honored to volunteer my services for this project.",
+    image: cdn("a52fc1fc55b143b7a9edfff92fbc6508"),
+    images: [
+      cdn("a52fc1fc55b143b7a9edfff92fbc6508"),
+      cdn("4389a46d9cee4591bb08b3b95cf1c286"),
+      cdn("668d21fbdf9f4a98b96d6c80a2defce8"),
+      cdn("1326c3334b0e4a418eb6cafabb8ca5e1"),
+      cdn("02178d1db3d043498fcf3026b90ab86e"),
+    ],
+  },
 ];
