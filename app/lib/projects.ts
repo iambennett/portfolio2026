@@ -220,6 +220,25 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "edis-group-sales-sheets",
+    title: "Edis Group Sales Sheets",
+    category: "Sales collateral",
+    tags: ["Layout"],
+    description:
+      "EDIS Group asked me to help them create a set of sales sheets to market the company. Photoshop was used to create some of the main graphics and the final sheets were composed with InDesign.",
+    image: cdn("f9c7ad7e13364682a4f76ebb7b81ce80"),
+    images: [
+      cdn("f9c7ad7e13364682a4f76ebb7b81ce80"),
+      cdn("ff2208fa351f47468b63fcaf3174939f"),
+      cdn("21f438bd6a0e40a792e8a4512fc42ca6"),
+      cdn("2c9649f4eb754a1fbd017f809bedf575"),
+      cdn("ede33ae2db3446828068d89f904af65b"),
+      cdn("a2c999085e304fb19a79b327a051c3c9"),
+      cdn("1f8bc3e785af44fdab3c36a3fc843b05"),
+      cdn("cb0fe154a87e404f9d9ca603e10d117f"),
+    ],
+  },
+  {
     slug: "graham-financial-services",
     title: "Graham Financial Services",
     category: "Branding and web design",
