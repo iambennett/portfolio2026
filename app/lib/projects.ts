@@ -540,8 +540,9 @@ export const projects: Project[] = [
     tags: ["Illustration", "Large Scale / Tradeshow"],
     description:
       "I am a band dad, and the 2026 show for Louisville Male High School was titled \"Like a Moth to a Flame,\" a song from Stravinsky. I was responsible for creating the ideas for the moths. I sketched them out in Illustrator and created them with wood, polystyrene foam, paint, and Velcro. The largest moth was over 11 feet tall when complete.",
-    image: cdn("65e7a2368b7e45e9be54f7a4f1829765"),
+    image: cdn("6a3950bb7ffb4981979584528a87a1ce"),
     images: [
+      cdn("6a3950bb7ffb4981979584528a87a1ce"),
       cdn("65e7a2368b7e45e9be54f7a4f1829765"),
       cdn("a76bccb4e699439cb91542db2e390ded"),
       cdn("e03ad3b13bc24a1a83f3867b5f61da27"),
@@ -554,7 +555,6 @@ export const projects: Project[] = [
       cdn("158167f929bd4f058f24cba55d6e2eca"),
       cdn("9171404cbe114420b5e042d0aed1df58"),
       cdn("6b4d2de571ee4d259b930a6e1d22e2c1"),
-      cdn("6a3950bb7ffb4981979584528a87a1ce"),
     ],
   },
 ];
