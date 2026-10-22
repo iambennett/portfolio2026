@@ -274,7 +274,7 @@ export const projects: Project[] = [
   },
   {
     slug: "dynamic-wellness",
-    title: "Dynamic Wellness",
+    title: "Dynamic Wellness Website Redesign",
     category: "Branding, print, and web design",
     tags: ["Logo & Branding", "Layout", "Web Design"],
     description:
