@@ -23,6 +23,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router";
 import { HeroCollage } from "@/components/hero-collage";
 import { ProjectCard } from "@/components/project-card";
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { projects } from "@/lib/projects";
 
@@ -393,12 +394,9 @@ export default function HomeRoute() {
 
         <TestimonialsCarousel />
 
-        <footer className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 px-6 pb-24 pt-20 text-sm text-muted-foreground">
-          <span>© {new Date().getFullYear()} Iam Bennett</span>
-          <span>Designed in Fusion</span>
-        </footer>
         </div>
       </main>
+      <SiteFooter />
     </div>
   );
 }

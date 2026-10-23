@@ -1,3 +1,4 @@
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 export function meta() {
@@ -136,9 +137,6 @@ const notableProjects = [
   "Justice AV Solutions rebrand: Delivered a complete company rebrand, from logo development to a website overhaul, sales sheets, promotional materials, trade show displays, business cards, building signage, and more.",
 ];
 
-const professionalSummaryClosing =
-  "I have more than 25 years of experience helping companies across the United States strengthen their brands and stand out through innovative design and targeted marketing. Along the way, I've led national marketing campaigns and product launches in fields as varied as law enforcement, K–12 education, and enterprise pharmacy systems. Each experience has reinforced the same lesson: great marketing starts with understanding the people you want to reach.";
-
 const skills = [
   ["Brand strategy & identity", "Positioning; messaging; campaigns"],
   [
@@ -187,7 +185,9 @@ export default function ResumeRoute() {
               work running smoothly and the brand looking sharp. I also run a
               freelance marketing practice.
             </p>
-            <p>{professionalSummaryClosing}</p>
+            <p>
+              I have more than 25 years of experience helping companies across the United States strengthen their brands and stand out through innovative design and targeted marketing. Along the way, I've led national marketing campaigns and product launches in fields as varied as law enforcement, K–12 education, and enterprise pharmacy systems. Each experience has reinforced the same lesson: great marketing starts with understanding the people you want to reach.
+            </p>
           </div>
         </section>
 
@@ -284,49 +284,7 @@ export default function ResumeRoute() {
         </section>
       </main>
 
-      <footer className="border-t border-border bg-muted">
-        <div className="mx-auto grid max-w-4xl gap-10 px-6 py-16 md:grid-cols-[auto_1fr] md:items-start">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2Fbcb50ddddfe34df1833554796fdab2ea?format=webp&width=800&height=1200"
-            alt="Iam Bennett"
-            className="h-28 w-auto"
-          />
-          <div className="space-y-6">
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              {professionalSummaryClosing}
-            </p>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a
-                  href="mailto:ibennett00@gmail.com"
-                  className="text-primary transition-opacity hover:opacity-80"
-                >
-                  ibennett00@gmail.com
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:+15027978997"
-                  className="text-primary transition-opacity hover:opacity-80"
-                >
-                  502-797-8997
-                </a>
-              </li>
-              <li className="text-muted-foreground">
-                10620 Gleneagle Place, Louisville, KY 40223
-              </li>
-              <li>
-                <a
-                  href="https://www.iambennett.com"
-                  className="text-primary transition-opacity hover:opacity-80"
-                >
-                  www.iambennett.com
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

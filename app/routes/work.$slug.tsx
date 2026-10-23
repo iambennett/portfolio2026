@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 import { ProjectCard } from "@/components/project-card";
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { projects, type Project } from "@/lib/projects";
 
@@ -94,6 +95,7 @@ export default function ProjectRoute() {
           ))}
         </div>
       </section>
+      <SiteFooter />
     </div>
   );
 }
