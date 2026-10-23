@@ -97,6 +97,8 @@ const testimonials = [
       "I cannot convey, in the limited space provided, how essential Iam is to the product portfolio and digital face of Appriss. I, for one, depend heavily on Iam for direction, design and creativity in all of the Public Safety Products. He gives each of the products I am responsible for a look and feel like no other. His development of intranets, external websites, and sales collateral has given Appriss a consistent and professional appearance. He has consistently over delivered in any project and in less than estimated time. His attitude and demeanor are exemplary. A true find.",
     name: "Glenn Wright",
     role: "Author | Product + Engineering Leadership",
+    photo:
+      "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F7a62ebc19f824bbb9075512fab8f7d66?format=webp&width=800&height=1200",
   },
   {
     quote:
