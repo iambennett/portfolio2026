@@ -10,12 +10,15 @@ import {
   IconBrandWindows,
   IconBrandWordpress,
   IconBox,
+  IconChevronLeft,
+  IconChevronRight,
   IconMicrophone,
   IconPencil,
   IconSparkles,
   IconWaveSine,
   type TablerIcon,
 } from "@tabler/icons-react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import { HeroCollage } from "@/components/hero-collage";
 import { ProjectCard } from "@/components/project-card";
@@ -121,6 +124,74 @@ const testimonials = [
       "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F0e08c672629e4d288bfe71eb3789bef4?format=webp&width=800&height=1200",
   },
 ];
+
+const TESTIMONIAL_INTERVAL_MS = 15000;
+
+function TestimonialsCarousel() {
+  const [index, setIndex] = useState(0);
+  const count = testimonials.length;
+  const testimonial = testimonials[index];
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setIndex((current) => (current + 1) % count);
+    }, TESTIMONIAL_INTERVAL_MS);
+    return () => window.clearInterval(timer);
+  }, [index, count]);
+
+  const step = (direction: number) => {
+    setIndex((current) => (current + direction + count) % count);
+  };
+
+  const arrowClass =
+    "absolute top-1/2 z-10 inline-flex size-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background text-foreground transition-colors hover:bg-accent";
+
+  return (
+    <section id="testimonials" className="py-20">
+      <h2 className="mx-auto mb-10 max-w-6xl px-6 text-2xl font-semibold tracking-tight md:text-3xl">
+        Testimonials
+      </h2>
+      <div className="relative">
+        <figure className="mx-auto w-[min(calc(100%-8rem),40rem)] rounded-xl border border-border bg-card p-8">
+          {testimonial.photo && (
+            <img
+              src={testimonial.photo}
+              alt=""
+              className="mb-6 size-16 rounded-full object-cover"
+            />
+          )}
+          <blockquote className="text-base leading-relaxed text-muted-foreground">
+            {testimonial.quote}
+          </blockquote>
+          <figcaption className="mt-6 text-sm">
+            <span className="block font-medium text-foreground">
+              {testimonial.name}
+            </span>
+            <span className="block text-muted-foreground">
+              {testimonial.role}
+            </span>
+          </figcaption>
+        </figure>
+        <button
+          type="button"
+          onClick={() => step(-1)}
+          aria-label="Previous testimonial"
+          className={`${arrowClass} left-4`}
+        >
+          <IconChevronLeft size={20} />
+        </button>
+        <button
+          type="button"
+          onClick={() => step(1)}
+          aria-label="Next testimonial"
+          className={`${arrowClass} right-4`}
+        >
+          <IconChevronRight size={20} />
+        </button>
+      </div>
+    </section>
+  );
+}
 
 export default function HomeRoute() {
   return (
@@ -245,39 +316,7 @@ export default function HomeRoute() {
           </div>
         </section>
 
-        <section id="testimonials" className="overflow-hidden py-20">
-          <h2 className="mx-auto mb-10 max-w-6xl px-6 text-2xl font-semibold tracking-tight md:text-3xl">
-            Testimonials
-          </h2>
-          <div className="testimonial-marquee flex w-max">
-            {[...testimonials, ...testimonials].map((testimonial, index) => (
-              <figure
-                key={index}
-                aria-hidden={index >= testimonials.length}
-                className="mr-6 w-[min(85vw,30rem)] shrink-0 rounded-xl border border-border bg-card p-8"
-              >
-                {testimonial.photo && (
-                  <img
-                    src={testimonial.photo}
-                    alt=""
-                    className="mb-6 size-16 rounded-full object-cover"
-                  />
-                )}
-                <blockquote className="text-base leading-relaxed text-muted-foreground">
-                  {testimonial.quote}
-                </blockquote>
-                <figcaption className="mt-6 text-sm">
-                  <span className="block font-medium text-foreground">
-                    {testimonial.name}
-                  </span>
-                  <span className="block text-muted-foreground">
-                    {testimonial.role}
-                  </span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </section>
+        <TestimonialsCarousel />
 
         <footer className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 px-6 pb-24 pt-20 text-sm text-muted-foreground">
           <span>© {new Date().getFullYear()} Iam Bennett</span>
