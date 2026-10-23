@@ -224,12 +224,9 @@ function TestimonialsCarousel() {
 
   return (
     <section id="testimonials" className="py-20">
-      <div className="mx-auto mb-12 max-w-6xl px-6 text-center">
-        <h2 className="text-2xl font-bold uppercase tracking-wide text-primary md:text-3xl">
-          Testimonials
-        </h2>
-        <div className="mx-auto mt-3 h-1 w-20 bg-primary" />
-      </div>
+      <h2 className="mx-auto mb-10 max-w-6xl px-6 text-2xl font-semibold tracking-tight md:text-3xl">
+        Testimonials
+      </h2>
       <div className="relative">
         <div className="mx-auto grid w-[min(calc(100%-8rem),72rem)] gap-x-8 gap-y-16 pt-14 md:grid-cols-3">
           {visible.map((testimonial, position) => (
