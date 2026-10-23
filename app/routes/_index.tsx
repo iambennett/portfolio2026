@@ -98,6 +98,12 @@ const testimonials = [
     name: "Glenn Wright",
     role: "Author | Product + Engineering Leadership",
   },
+  {
+    quote:
+      "Iam has been an incredible value add to my consulting business. He created my logo, my website, my brochures, my marketing materials etc. He has always exceeded my expectations in quality and has been very, very reasonable in terms of cost. In addition, he is so easy with which to work. He is personable, responsive, creative, and usually a mind reader. Iam regularly amazes me; with very little direction, he gives me exactly what I want. . . or better. I have referred Iam to other small business owners, and the reviews have been 100% positive. Iam is just a really talented guy that does great work.",
+    name: "Joe DeSensi, Ed.D",
+    role: "President of Educational Directions, LLC",
+  },
 ];
 
 export default function HomeRoute() {
