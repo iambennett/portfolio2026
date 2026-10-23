@@ -91,6 +91,8 @@ const testimonials = [
       "Let's just say when I was hired by JAVS to create a marketing and product department, I knew exactly who my first hire was going to be. I worked with Iam at Appriss and then contracted with him at ZirMed. Then when I brought him onboard at JAVS, he helped me rebrand the company which meant launching a new website, creating new marketing materials, designing a new conference booth, implementing a new marketing automation platform, and the list goes on and on. He is one of the most proactive people I have ever worked with, constantly engaged and bringing new ideas to the table. I would always joke with him that he creates his own job security! He also worked on the domestic and international partner marketing initiatives which received rave reviews. He has one of the best worth ethics I have ever seen. He truly works hard but also loves having fun at the same time. He also knows how to deliver what someone wants graphically. Give him some insight into what you want, and he will blow it out of the water. Two words that describe him are creative genius! Any company would be lucky to have him.",
     name: "Theresa DaSilva",
     role: "Marketing Executive | Realtor | Real Estate Investor",
+    photo:
+      "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F427b8e0ca603400590fbe15efbd718fc?format=webp&width=800&height=1200",
   },
   {
     quote:
