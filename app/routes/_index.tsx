@@ -284,12 +284,6 @@ export default function HomeRoute() {
               View work
               <IconArrowUpRight size={16} />
             </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-accent"
-            >
-              Get in touch
-            </a>
           </div>
           </div>
         </section>
