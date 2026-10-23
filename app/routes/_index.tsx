@@ -10,7 +10,6 @@ import {
   IconBrandWindows,
   IconBrandWordpress,
   IconBox,
-  IconMail,
   IconMicrophone,
   IconPencil,
   IconSparkles,
@@ -203,27 +202,10 @@ export default function HomeRoute() {
           </div>
         </section>
 
-        <section
-          id="contact"
-          className="mx-auto max-w-6xl px-6 pb-24 pt-20"
-        >
-          <div className="rounded-2xl bg-accent p-10 md:p-16">
-            <h2 className="max-w-2xl text-3xl font-semibold tracking-tight md:text-5xl">
-              Have a project in mind?
-            </h2>
-            <a
-              href="mailto:hello@iambennett.com"
-              className="mt-8 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-            >
-              <IconMail size={16} />
-              hello@iambennett.com
-            </a>
-          </div>
-          <footer className="mt-12 flex flex-wrap justify-between gap-4 text-sm text-muted-foreground">
-            <span>© {new Date().getFullYear()} Iam Bennett</span>
-            <span>Designed in Fusion</span>
-          </footer>
-        </section>
+        <footer className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 px-6 pb-24 pt-20 text-sm text-muted-foreground">
+          <span>© {new Date().getFullYear()} Iam Bennett</span>
+          <span>Designed in Fusion</span>
+        </footer>
         </div>
       </main>
     </div>
