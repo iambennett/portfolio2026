@@ -19,7 +19,7 @@ import {
   IconWaveSine,
   type TablerIcon,
 } from "@tabler/icons-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router";
 import { HeroCollage } from "@/components/hero-collage";
 import { ProjectCard } from "@/components/project-card";
@@ -133,6 +133,70 @@ const testimonialPageCount = Math.ceil(
   testimonials.length / TESTIMONIALS_PER_PAGE,
 );
 
+function TestimonialCard({
+  testimonial,
+  featured,
+}: {
+  testimonial: (typeof testimonials)[number];
+  featured: boolean;
+}) {
+  const [expanded, setExpanded] = useState(false);
+  const [overflows, setOverflows] = useState(false);
+  const quoteRef = useRef<HTMLQuoteElement>(null);
+
+  useEffect(() => {
+    const measure = () => {
+      const el = quoteRef.current;
+      if (el) setOverflows(el.scrollHeight > el.clientHeight);
+    };
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, []);
+
+  return (
+    <figure
+      className={`relative flex flex-col rounded-md px-8 pb-8 pt-20 text-center ${
+        featured ? "bg-card shadow-xl" : "bg-muted"
+      }`}
+    >
+      {testimonial.photo && (
+        <img
+          src={testimonial.photo}
+          alt=""
+          className="absolute left-1/2 top-0 size-28 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-background object-cover"
+        />
+      )}
+      <IconQuote size={28} className="mx-auto mb-4 text-primary" />
+      <blockquote
+        ref={quoteRef}
+        className={`text-sm leading-relaxed text-muted-foreground ${
+          expanded ? "" : "line-clamp-5 min-h-[7.11rem]"
+        }`}
+      >
+        {testimonial.quote}
+      </blockquote>
+      {(overflows || expanded) && (
+        <button
+          type="button"
+          onClick={() => setExpanded((value) => !value)}
+          className="mt-2 self-center text-sm font-medium text-primary hover:underline"
+        >
+          {expanded ? "less" : "more"}
+        </button>
+      )}
+      <figcaption className="mt-6 text-sm">
+        <span className="block font-semibold text-primary">
+          {testimonial.name}
+        </span>
+        <span className="block text-xs text-muted-foreground">
+          {testimonial.role}
+        </span>
+      </figcaption>
+    </figure>
+  );
+}
+
 function TestimonialsCarousel() {
   const [page, setPage] = useState(0);
   const visible = testimonials.slice(
@@ -168,32 +232,11 @@ function TestimonialsCarousel() {
       <div className="relative">
         <div className="mx-auto grid w-[min(calc(100%-8rem),72rem)] gap-x-8 gap-y-16 pt-14 md:grid-cols-3">
           {visible.map((testimonial, position) => (
-            <figure
+            <TestimonialCard
               key={testimonial.name}
-              className={`relative flex flex-col rounded-md px-8 pb-8 pt-20 text-center ${
-                position === 1 ? "bg-card shadow-xl" : "bg-muted"
-              }`}
-            >
-              {testimonial.photo && (
-                <img
-                  src={testimonial.photo}
-                  alt=""
-                  className="absolute left-1/2 top-0 size-28 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-background object-cover"
-                />
-              )}
-              <IconQuote size={28} className="mx-auto mb-4 text-primary" />
-              <blockquote className="flex-1 text-sm leading-relaxed text-muted-foreground">
-                {testimonial.quote}
-              </blockquote>
-              <figcaption className="mt-6 text-sm">
-                <span className="block font-semibold text-primary">
-                  {testimonial.name}
-                </span>
-                <span className="block text-xs text-muted-foreground">
-                  {testimonial.role}
-                </span>
-              </figcaption>
-            </figure>
+              testimonial={testimonial}
+              featured={position === 1}
+            />
           ))}
         </div>
         <button
