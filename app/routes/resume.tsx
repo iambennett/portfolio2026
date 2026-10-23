@@ -1,3 +1,4 @@
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 export function meta() {
@@ -185,13 +186,7 @@ export default function ResumeRoute() {
               freelance marketing practice.
             </p>
             <p>
-              I have more than 25 years of experience helping companies across
-              the United States strengthen their brands and stand out through
-              innovative design and targeted marketing. Along the way, I've led
-              national marketing campaigns and product launches in fields as
-              varied as law enforcement, K–12 education, and enterprise pharmacy
-              systems. Each experience has reinforced the same lesson: great
-              marketing starts with understanding the people you want to reach.
+              I have more than 25 years of experience helping companies across the United States strengthen their brands and stand out through innovative design and targeted marketing. Along the way, I've led national marketing campaigns and product launches in fields as varied as law enforcement, K–12 education, and enterprise pharmacy systems. Each experience has reinforced the same lesson: great marketing starts with understanding the people you want to reach.
             </p>
           </div>
         </section>
@@ -288,6 +283,8 @@ export default function ResumeRoute() {
           </div>
         </section>
       </main>
+
+      <SiteFooter />
     </div>
   );
 }

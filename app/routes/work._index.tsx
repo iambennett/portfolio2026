@@ -1,4 +1,5 @@
 import { ProjectGrid } from "@/components/project-grid";
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 export function meta() {
@@ -12,6 +13,7 @@ export default function WorkRoute() {
       <main className="mx-auto max-w-6xl px-6 py-20">
         <ProjectGrid />
       </main>
+      <SiteFooter />
     </div>
   );
 }
