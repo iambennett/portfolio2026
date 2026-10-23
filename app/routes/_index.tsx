@@ -12,7 +12,7 @@ import {
   IconBox,
   IconChevronLeft,
   IconChevronRight,
-  IconQuote,
+  IconQuoteFilled,
   IconMicrophone,
   IconPencil,
   IconSparkles,
@@ -167,7 +167,7 @@ function TestimonialCard({
           className="absolute left-1/2 top-0 size-28 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-background object-cover"
         />
       )}
-      <IconQuote size={28} className="mx-auto mb-4 text-primary" />
+      <IconQuoteFilled size={28} className="mx-auto mb-4 text-primary" />
       <blockquote
         ref={quoteRef}
         className={`text-sm leading-relaxed text-muted-foreground ${
