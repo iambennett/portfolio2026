@@ -109,6 +109,8 @@ const testimonials = [
       "Iam did an outstanding job on my company logo and website. His design captured the essence of my business. The response from my clients has been extremely positive. If I could have checked all the attributes, I definitely would have done so. I've recommended him to many of my colleagues and friends. All have been just as pleased with his work.",
     name: "Hope Zoeller, Ed.D",
     role: "Facilitator of Leader Success",
+    photo:
+      "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F0e08c672629e4d288bfe71eb3789bef4?format=webp&width=800&height=1200",
   },
 ];
 
@@ -246,6 +248,13 @@ export default function HomeRoute() {
                 aria-hidden={index >= testimonials.length}
                 className="mr-6 w-[min(85vw,30rem)] shrink-0 rounded-xl border border-border bg-card p-8"
               >
+                {testimonial.photo && (
+                  <img
+                    src={testimonial.photo}
+                    alt=""
+                    className="mb-6 size-16 rounded-full object-cover"
+                  />
+                )}
                 <blockquote className="text-base leading-relaxed text-muted-foreground">
                   {testimonial.quote}
                 </blockquote>
