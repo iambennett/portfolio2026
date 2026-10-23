@@ -365,7 +365,7 @@ export default function HomeRoute() {
                 {capabilities.map((capability) => (
                   <li
                     key={capability}
-                    className="rounded-full border border-border px-4 py-2 text-sm text-muted-foreground"
+                    className="rounded-full border border-border bg-background px-4 py-2 text-sm text-muted-foreground"
                   >
                     {capability}
                   </li>
@@ -378,7 +378,10 @@ export default function HomeRoute() {
               </h3>
               <ul className="grid gap-4 sm:grid-cols-2">
                 {software.map(({ name, icon: Icon }) => (
-                  <li key={name} className="flex items-center gap-3 text-sm">
+                  <li
+                    key={name}
+                    className="flex items-center gap-3 rounded-lg border border-border bg-background px-4 py-3 text-sm"
+                  >
                     <Icon size={22} className="shrink-0 text-primary" />
                     {name}
                   </li>
