@@ -284,6 +284,12 @@ export default function HomeRoute() {
               View work
               <IconArrowUpRight size={16} />
             </a>
+            <Link
+              to="/resume"
+              className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-opacity hover:opacity-80"
+            >
+              About me
+            </Link>
           </div>
           </div>
         </section>
