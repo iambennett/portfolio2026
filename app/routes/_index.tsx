@@ -12,6 +12,7 @@ import {
   IconBox,
   IconChevronLeft,
   IconChevronRight,
+  IconQuote,
   IconMicrophone,
   IconPencil,
   IconSparkles,
@@ -158,31 +159,37 @@ function TestimonialsCarousel() {
 
   return (
     <section id="testimonials" className="py-20">
-      <h2 className="mx-auto mb-10 max-w-6xl px-6 text-2xl font-semibold tracking-tight md:text-3xl">
-        Testimonials
-      </h2>
+      <div className="mx-auto mb-12 max-w-6xl px-6 text-center">
+        <h2 className="text-2xl font-bold uppercase tracking-wide text-primary md:text-3xl">
+          Testimonials
+        </h2>
+        <div className="mx-auto mt-3 h-1 w-20 bg-primary" />
+      </div>
       <div className="relative">
-        <div className="mx-auto grid w-[min(calc(100%-8rem),72rem)] gap-6 md:grid-cols-3">
-          {visible.map((testimonial) => (
+        <div className="mx-auto grid w-[min(calc(100%-8rem),72rem)] gap-x-8 gap-y-16 pt-14 md:grid-cols-3">
+          {visible.map((testimonial, position) => (
             <figure
               key={testimonial.name}
-              className="flex flex-col rounded-xl border border-border bg-card p-8"
+              className={`relative flex flex-col rounded-md px-8 pb-8 pt-20 text-center ${
+                position === 1 ? "bg-card shadow-xl" : "bg-muted"
+              }`}
             >
               {testimonial.photo && (
                 <img
                   src={testimonial.photo}
                   alt=""
-                  className="mb-6 size-16 rounded-full object-cover"
+                  className="absolute left-1/2 top-0 size-28 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-background object-cover"
                 />
               )}
-              <blockquote className="flex-1 text-base leading-relaxed text-muted-foreground">
+              <IconQuote size={28} className="mx-auto mb-4 text-primary" />
+              <blockquote className="flex-1 text-sm leading-relaxed text-muted-foreground">
                 {testimonial.quote}
               </blockquote>
               <figcaption className="mt-6 text-sm">
-                <span className="block font-medium text-foreground">
+                <span className="block font-semibold text-primary">
                   {testimonial.name}
                 </span>
-                <span className="block text-muted-foreground">
+                <span className="block text-xs text-muted-foreground">
                   {testimonial.role}
                 </span>
               </figcaption>
