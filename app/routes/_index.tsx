@@ -127,20 +127,30 @@ const testimonials = [
 
 const TESTIMONIAL_INTERVAL_MS = 15000;
 
+const TESTIMONIALS_PER_PAGE = 3;
+const testimonialPageCount = Math.ceil(
+  testimonials.length / TESTIMONIALS_PER_PAGE,
+);
+
 function TestimonialsCarousel() {
-  const [index, setIndex] = useState(0);
-  const count = testimonials.length;
-  const testimonial = testimonials[index];
+  const [page, setPage] = useState(0);
+  const visible = testimonials.slice(
+    page * TESTIMONIALS_PER_PAGE,
+    (page + 1) * TESTIMONIALS_PER_PAGE,
+  );
 
   useEffect(() => {
     const timer = window.setInterval(() => {
-      setIndex((current) => (current + 1) % count);
+      setPage((current) => (current + 1) % testimonialPageCount);
     }, TESTIMONIAL_INTERVAL_MS);
     return () => window.clearInterval(timer);
-  }, [index, count]);
+  }, [page]);
 
   const step = (direction: number) => {
-    setIndex((current) => (current + direction + count) % count);
+    setPage(
+      (current) =>
+        (current + direction + testimonialPageCount) % testimonialPageCount,
+    );
   };
 
   const arrowClass =
@@ -152,26 +162,33 @@ function TestimonialsCarousel() {
         Testimonials
       </h2>
       <div className="relative">
-        <figure className="mx-auto w-[min(calc(100%-8rem),40rem)] rounded-xl border border-border bg-card p-8">
-          {testimonial.photo && (
-            <img
-              src={testimonial.photo}
-              alt=""
-              className="mb-6 size-16 rounded-full object-cover"
-            />
-          )}
-          <blockquote className="text-base leading-relaxed text-muted-foreground">
-            {testimonial.quote}
-          </blockquote>
-          <figcaption className="mt-6 text-sm">
-            <span className="block font-medium text-foreground">
-              {testimonial.name}
-            </span>
-            <span className="block text-muted-foreground">
-              {testimonial.role}
-            </span>
-          </figcaption>
-        </figure>
+        <div className="mx-auto grid w-[min(calc(100%-8rem),72rem)] gap-6 md:grid-cols-3">
+          {visible.map((testimonial) => (
+            <figure
+              key={testimonial.name}
+              className="flex flex-col rounded-xl border border-border bg-card p-8"
+            >
+              {testimonial.photo && (
+                <img
+                  src={testimonial.photo}
+                  alt=""
+                  className="mb-6 size-16 rounded-full object-cover"
+                />
+              )}
+              <blockquote className="flex-1 text-base leading-relaxed text-muted-foreground">
+                {testimonial.quote}
+              </blockquote>
+              <figcaption className="mt-6 text-sm">
+                <span className="block font-medium text-foreground">
+                  {testimonial.name}
+                </span>
+                <span className="block text-muted-foreground">
+                  {testimonial.role}
+                </span>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
         <button
           type="button"
           onClick={() => step(-1)}
