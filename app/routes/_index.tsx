@@ -182,7 +182,7 @@ function TestimonialCard({
           onClick={() => setExpanded((value) => !value)}
           className="mt-2 self-center text-sm font-medium text-primary hover:underline"
         >
-          {expanded ? "less" : "more"}
+          {expanded ? "shrink testimonial" : "full testimonial"}
         </button>
       )}
       <figcaption className="mt-6 text-sm">
