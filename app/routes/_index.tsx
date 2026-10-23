@@ -348,8 +348,15 @@ export default function HomeRoute() {
           </div>
         </section>
 
-        <section id="capabilities" className="mx-auto max-w-6xl px-6 py-20">
-          <div className="grid gap-12 md:grid-cols-2">
+        <section
+          id="capabilities"
+          className="bg-muted"
+          style={{
+            backgroundImage:
+              "repeating-linear-gradient(45deg, hsl(var(--foreground) / 0.04) 0 1px, transparent 1px 14px)",
+          }}
+        >
+          <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2">
             <div>
               <h3 className="mb-8 text-xl font-semibold tracking-tight">
                 Design capabilities
