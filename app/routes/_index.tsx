@@ -92,6 +92,12 @@ const testimonials = [
     name: "Theresa DaSilva",
     role: "Marketing Executive | Realtor | Real Estate Investor",
   },
+  {
+    quote:
+      "I cannot convey, in the limited space provided, how essential Iam is to the product portfolio and digital face of Appriss. I, for one, depend heavily on Iam for direction, design and creativity in all of the Public Safety Products. He gives each of the products I am responsible for a look and feel like no other. His development of intranets, external websites, and sales collateral has given Appriss a consistent and professional appearance. He has consistently over delivered in any project and in less than estimated time. His attitude and demeanor are exemplary. A true find.",
+    name: "Glenn Wright",
+    role: "Author | Product + Engineering Leadership",
+  },
 ];
 
 export default function HomeRoute() {
