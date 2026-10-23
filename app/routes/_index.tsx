@@ -79,6 +79,21 @@ const selectedWork = selectedWorkSlugs.flatMap((slug) =>
   projects.filter((project) => project.slug === slug),
 );
 
+const testimonials = [
+  {
+    quote:
+      "Iam is a brilliant marketer with many years of experience! Immediately after being hired he designed and developed the company website from scratch, while masterfully re-branding the company from top to bottom to give us a more modern, professional look and feel. He is extremely enthusiastic about his work which is infectious, makes it fun to work on projects together, and is easy to collaborate with. He always has a creative, positive outlook and he’s good at organizing and bringing people together. Iam's presentation style is open and inviting to questions, while being engaging and thorough. If you have creative or marketing needs, you'd be at a loss to not have Iam lead the charge. He’s like Bluetooth: easily paired to any challenge!",
+    name: "Topher Vessels, MCP",
+    role: "Full Stack .NET Developer | Master Certified Crestron Programmer",
+  },
+  {
+    quote:
+      "Let's just say when I was hired by JAVS to create a marketing and product department, I knew exactly who my first hire was going to be. I worked with Iam at Appriss and then contracted with him at ZirMed. Then when I brought him onboard at JAVS, he helped me rebrand the company which meant launching a new website, creating new marketing materials, designing a new conference booth, implementing a new marketing automation platform, and the list goes on and on. He is one of the most proactive people I have ever worked with, constantly engaged and bringing new ideas to the table. I would always joke with him that he creates his own job security! He also worked on the domestic and international partner marketing initiatives which received rave reviews. He has one of the best worth ethics I have ever seen. He truly works hard but also loves having fun at the same time. He also knows how to deliver what someone wants graphically. Give him some insight into what you want, and he will blow it out of the water. Two words that describe him are creative genius! Any company would be lucky to have him.",
+    name: "Theresa DaSilva",
+    role: "Marketing Executive | Realtor | Real Estate Investor",
+  },
+];
+
 export default function HomeRoute() {
   return (
     <div className="h-full min-h-0 flex-1 overflow-y-auto bg-background text-foreground">
@@ -199,6 +214,33 @@ export default function HomeRoute() {
                 ))}
               </ul>
             </div>
+          </div>
+        </section>
+
+        <section id="testimonials" className="overflow-hidden py-20">
+          <h2 className="mx-auto mb-10 max-w-6xl px-6 text-2xl font-semibold tracking-tight md:text-3xl">
+            Testimonials
+          </h2>
+          <div className="testimonial-marquee flex w-max">
+            {[...testimonials, ...testimonials].map((testimonial, index) => (
+              <figure
+                key={index}
+                aria-hidden={index >= testimonials.length}
+                className="mr-6 w-[min(85vw,30rem)] shrink-0 rounded-xl border border-border bg-card p-8"
+              >
+                <blockquote className="text-base leading-relaxed text-muted-foreground">
+                  {testimonial.quote}
+                </blockquote>
+                <figcaption className="mt-6 text-sm">
+                  <span className="block font-medium text-foreground">
+                    {testimonial.name}
+                  </span>
+                  <span className="block text-muted-foreground">
+                    {testimonial.role}
+                  </span>
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </section>
 
