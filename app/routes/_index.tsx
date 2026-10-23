@@ -104,6 +104,12 @@ const testimonials = [
     name: "Joe DeSensi, Ed.D",
     role: "President of Educational Directions, LLC",
   },
+  {
+    quote:
+      "Iam did an outstanding job on my company logo and website. His design captured the essence of my business. The response from my clients has been extremely positive. If I could have checked all the attributes, I definitely would have done so. I've recommended him to many of my colleagues and friends. All have been just as pleased with his work.",
+    name: "Hope Zoeller, Ed.D",
+    role: "Facilitator of Leader Success",
+  },
 ];
 
 export default function HomeRoute() {
