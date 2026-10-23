@@ -85,6 +85,8 @@ const testimonials = [
       "Iam is a brilliant marketer with many years of experience! Immediately after being hired he designed and developed the company website from scratch, while masterfully re-branding the company from top to bottom to give us a more modern, professional look and feel. He is extremely enthusiastic about his work which is infectious, makes it fun to work on projects together, and is easy to collaborate with. He always has a creative, positive outlook and he’s good at organizing and bringing people together. Iam's presentation style is open and inviting to questions, while being engaging and thorough. If you have creative or marketing needs, you'd be at a loss to not have Iam lead the charge. He’s like Bluetooth: easily paired to any challenge!",
     name: "Topher Vessels, MCP",
     role: "Full Stack .NET Developer | Master Certified Crestron Programmer",
+    photo:
+      "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2Fdd61991aa0254dc693ba9083c561a8bb?format=webp&width=800&height=1200",
   },
   {
     quote:
