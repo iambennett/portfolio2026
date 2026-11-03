@@ -52,6 +52,10 @@ const capabilities = [
   "Email campaigns",
   "Advertising",
   "UX/UI",
+  "Marketing Strategy",
+  "Social Media Campaigns",
+  "Creative Writing",
+  "RFP Responses",
 ];
 
 const software: { name: string; icon: TablerIcon }[] = [
