@@ -374,7 +374,7 @@ export default function HomeRoute() {
           <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2">
             <div>
               <h3 className="mb-8 text-xl font-semibold tracking-tight">
-                Design capabilities
+                Design &amp; Marketing Capabilities
               </h3>
               <ul className="flex flex-wrap gap-3">
                 {capabilities.map((capability) => (
