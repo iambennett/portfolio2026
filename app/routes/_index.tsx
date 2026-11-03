@@ -389,7 +389,7 @@ export default function HomeRoute() {
             </div>
             <div>
               <h3 className="mb-8 text-xl font-semibold tracking-tight">
-                Software & tools
+                Software & Tools
               </h3>
               <ul className="grid gap-4 sm:grid-cols-2">
                 {software.map(({ name, icon: Icon }) => (
