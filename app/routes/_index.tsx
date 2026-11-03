@@ -141,7 +141,9 @@ const testimonials = [
     quote:
       "Iam is one of the most creative graphic designers I have ever worked with. He can take any concept and make it visually appealing, applying brand guidelines at the same time. He is super-easy to work with, too. You want this guy on your team!",
     name: "Paul D. Casey",
-    role: "Leadership Coach/Team Builder/Inspirational Speaker/Author",
+  role: "Leadership Coach/Team Builder/Inspirational Speaker/Author",
+  photo:
+    "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F41b55dff7bda400bb93c4b0614f92b3a?format=webp&width=800&height=1200",
   },
 ];
 
