@@ -130,6 +130,8 @@ const testimonials = [
       "Iam has been an incredible partner to my business - State of Louisville. With the media and sports world constantly evolving, Iam has provided so much leadership and direction on how to build out websites that are engaging, impactful, and extremely functional. Without Iam, there would be no State of Louisville. He took our vision for the website, ran with it, and then did it again multiple times as we needed updates. If you are looking for any web help or a stand out employee, Iam is your guy!!",
     name: "Jacob Lane",
     role: "Senior Digital Media Strategist & Founder of State of Louisville",
+    photo:
+      "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F4c0a42f6099248bbbb1e60040fe0b9cd?format=webp&width=800&height=1200",
   },
 ];
 
