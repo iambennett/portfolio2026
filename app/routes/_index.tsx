@@ -290,10 +290,10 @@ export default function HomeRoute() {
             Your design challenge has a <span className="text-primary">solution.</span> Let's find it <span className="text-primary">together.</span>
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            I'm Iam Bennett, a marketing director and multimedia designer
-            who loves solving creative challenges. Give me a client goal and
-            a blank canvas, and I'll find a smart, memorable way to get
-            there.
+            My name is Iam Bennett, and I am a marketing director and
+            multimedia designer who loves solving creative challenges. Give me
+            a client goal and a blank canvas, and I'll find a smart, memorable
+            way to get there.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <a
