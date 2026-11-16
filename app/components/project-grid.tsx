@@ -16,7 +16,7 @@ export function ProjectGrid() {
     <>
       <div className="mb-6 flex items-end justify-between">
         <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-          Selected work
+          My Work
         </h2>
         <span className="text-sm text-muted-foreground">
           {visibleProjects.length} projects
