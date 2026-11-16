@@ -42,7 +42,7 @@ export function ProjectGrid() {
           );
         })}
       </div>
-      <div className="grid gap-x-6 gap-y-12 md:grid-cols-2">
+      <div className="grid gap-x-6 gap-y-12 md:grid-cols-3">
         {visibleProjects.map((project) => (
           <ProjectCard key={project.slug} project={project} />
         ))}

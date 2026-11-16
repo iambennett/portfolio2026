@@ -52,6 +52,13 @@ const capabilities = [
   "Email campaigns",
   "Advertising",
   "UX/UI",
+  "Marketing Strategy",
+  "Social Media Campaigns",
+  "Creative Writing",
+  "RFP Responses",
+  "Marketing Automation Platforms",
+  "AI Design Integration",
+  "Design Leadership",
 ];
 
 const software: { name: string; icon: TablerIcon }[] = [
@@ -103,14 +110,6 @@ const testimonials = [
   },
   {
     quote:
-      "I cannot convey, in the limited space provided, how essential Iam is to the product portfolio and digital face of Appriss. I, for one, depend heavily on Iam for direction, design and creativity in all of the Public Safety Products. He gives each of the products I am responsible for a look and feel like no other. His development of intranets, external websites, and sales collateral has given Appriss a consistent and professional appearance. He has consistently over delivered in any project and in less than estimated time. His attitude and demeanor are exemplary. A true find.",
-    name: "Glenn Wright",
-    role: "Author | Product + Engineering Leadership",
-    photo:
-      "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F7a62ebc19f824bbb9075512fab8f7d66?format=webp&width=800&height=1200",
-  },
-  {
-    quote:
       "Iam has been an incredible value add to my consulting business. He created my logo, my website, my brochures, my marketing materials etc. He has always exceeded my expectations in quality and has been very, very reasonable in terms of cost. In addition, he is so easy with which to work. He is personable, responsive, creative, and usually a mind reader. Iam regularly amazes me; with very little direction, he gives me exactly what I want. . . or better. I have referred Iam to other small business owners, and the reviews have been 100% positive. Iam is just a really talented guy that does great work.",
     name: "Joe DeSensi, Ed.D",
     role: "President of Educational Directions, LLC",
@@ -125,9 +124,25 @@ const testimonials = [
     photo:
       "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F0e08c672629e4d288bfe71eb3789bef4?format=webp&width=800&height=1200",
   },
+  {
+    quote:
+      "Iam has been an incredible partner to my business - State of Louisville. With the media and sports world constantly evolving, Iam has provided so much leadership and direction on how to build out websites that are engaging, impactful, and extremely functional. Without Iam, there would be no State of Louisville. He took our vision for the website, ran with it, and then did it again multiple times as we needed updates. If you are looking for any web help or a stand out employee, Iam is your guy!!",
+    name: "Jacob Lane",
+    role: "Senior Digital Media Strategist & Founder of State of Louisville",
+    photo:
+      "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F4c0a42f6099248bbbb1e60040fe0b9cd?format=webp&width=800&height=1200",
+  },
+  {
+    quote:
+      "Iam is one of the most creative graphic designers I have ever worked with. He can take any concept and make it visually appealing, applying brand guidelines at the same time. He is super-easy to work with, too. You want this guy on your team!",
+    name: "Paul D. Casey",
+  role: "Leadership Coach/Team Builder/Inspirational Speaker/Author",
+  photo:
+    "https://cdn.builder.io/api/v1/image/assets%2Fa4fcdba76a67414f97ce3b7afdf84c8b%2F41b55dff7bda400bb93c4b0614f92b3a?format=webp&width=800&height=1200",
+  },
 ];
 
-const TESTIMONIAL_INTERVAL_MS = 15000;
+const TESTIMONIAL_INTERVAL_MS = 10000;
 
 const TESTIMONIALS_PER_PAGE = 3;
 const testimonialPageCount = Math.ceil(
@@ -229,7 +244,10 @@ function TestimonialsCarousel() {
         Testimonials
       </h2>
       <div className="relative">
-        <div className="mx-auto grid w-[min(calc(100%-8rem),72rem)] gap-x-8 gap-y-16 pt-14 md:grid-cols-3">
+        <div
+          key={page}
+          className="testimonial-slide-in mx-auto grid w-[min(calc(100%-8rem),72rem)] gap-x-8 gap-y-16 pt-14 md:grid-cols-3"
+        >
           {visible.map((testimonial, position) => (
             <TestimonialCard
               key={testimonial.name}
@@ -360,7 +378,7 @@ export default function HomeRoute() {
           <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2">
             <div>
               <h3 className="mb-8 text-xl font-semibold tracking-tight">
-                Design capabilities
+                Design &amp; Marketing Capabilities
               </h3>
               <ul className="flex flex-wrap gap-3">
                 {capabilities.map((capability) => (
@@ -375,7 +393,7 @@ export default function HomeRoute() {
             </div>
             <div>
               <h3 className="mb-8 text-xl font-semibold tracking-tight">
-                Software & tools
+                Software & Tools
               </h3>
               <ul className="grid gap-4 sm:grid-cols-2">
                 {software.map(({ name, icon: Icon }) => (

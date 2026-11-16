@@ -24,6 +24,8 @@ export type Project = {
   gradient?: string;
   description?: string;
   images?: string[];
+  spotifyEpisodeId?: string;
+  spotifyShowId?: string;
 };
 
 export const projects: Project[] = [
@@ -376,6 +378,7 @@ export const projects: Project[] = [
       cdn("22c2170cd41b4b00947bf17fe47d03df"),
       cdn("6b41056ce1264c549dbad1899a220eb2"),
       cdn("6547a9acd29b4248aa8f361948387273"),
+      cdn("9f6598b86d8b4e3b96f0645bfc0b31b2"),
     ],
   },
   {
@@ -696,6 +699,35 @@ export const projects: Project[] = [
       cdn("1b033b5ed20243c29fd7aa43de44f94e"),
       cdn("fd175aaf47404a6f8f256da410be3edf"),
       cdn("a420753fe3394edf91121ceee567ea84"),
+    ],
+  },
+  {
+    slug: "a-hand-up-heart-and-hope-gala",
+    title: "A Hand Up - Heart & Hope Gala",
+    category: "Logo design",
+    tags: ["Logo & Branding"],
+    description:
+      "A Hand Up Community Resource Center teaches financial literacy to underserved communities in the west end of Louisville. The Heart & Hope fundraiser is their largest income generating event of the year. This logo was done in Illustrator and was used on all of their materials, invites, signage, and more.",
+    image: cdn("b623590ec36c455497bcb43b81743fb0"),
+    images: [
+      cdn("b623590ec36c455497bcb43b81743fb0"),
+      cdn("924547e05e4d4391bd5edacbf77ee7cb"),
+    ],
+  },
+  {
+    slug: "activating-hope-podcast",
+    title: "Activating Hope Podcast Project",
+    category: "Audio Editing, Podcasting",
+    tags: ["Misc"],
+    description:
+      "I am proud to be the Executive Producer for the Activating Hope Podcast. I've done all of the sound engineering for this podcast, put together the audio intro, and edited all of her episodes in Adobe Audition.",
+    spotifyEpisodeId: "6r4u1Bn96wBhQMus46ub1X",
+    spotifyShowId: "6qcI8HBxCEdm5uothk6WSm",
+    image: cdn("863e7d8aef454729b4bb211cd6c475ac"),
+    images: [
+      cdn("863e7d8aef454729b4bb211cd6c475ac"),
+      cdn("d81cdbb256cf42639ebe94e3ca417ca6"),
+      cdn("9ce395b7a60649dd981b626b1c29c3e8"),
     ],
   },
 ];
