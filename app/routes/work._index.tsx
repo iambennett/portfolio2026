@@ -8,9 +8,16 @@ export function meta() {
 
 export default function WorkRoute() {
   return (
-    <div className="h-full min-h-0 flex-1 overflow-y-auto bg-background text-foreground">
+    <div className="relative h-full min-h-0 flex-1 overflow-y-auto bg-background text-foreground">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 overflow-hidden"
+      >
+        <div className="work-blob absolute -left-32 top-24 size-[36rem] bg-primary opacity-[0.07] blur-3xl" />
+        <div className="work-blob work-blob--alt absolute -right-40 top-[40%] size-[42rem] bg-primary opacity-[0.05] blur-3xl" />
+      </div>
       <SiteHeader />
-      <main className="mx-auto max-w-6xl px-6 py-20">
+      <main className="relative mx-auto max-w-6xl px-6 py-20">
         <ProjectGrid />
       </main>
       <SiteFooter />
