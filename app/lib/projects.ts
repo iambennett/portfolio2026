@@ -699,4 +699,17 @@ export const projects: Project[] = [
       cdn("a420753fe3394edf91121ceee567ea84"),
     ],
   },
+  {
+    slug: "a-hand-up-heart-and-hope-gala",
+    title: "A Hand Up - Heart & Hope Gala",
+    category: "Logo design",
+    tags: ["Logo & Branding"],
+    description:
+      "A Hand Up Community Resource Center teaches financial literacy to underserved communities in the west end of Louisville. The Heart & Hope fundraiser is their largest income generating event of the year. This logo was done in Illustrator and was used on all of their materials, invites, signage, and more.",
+    image: cdn("b623590ec36c455497bcb43b81743fb0"),
+    images: [
+      cdn("b623590ec36c455497bcb43b81743fb0"),
+      cdn("924547e05e4d4391bd5edacbf77ee7cb"),
+    ],
+  },
 ];
