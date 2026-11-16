@@ -25,7 +25,7 @@ export default function WorkRoute() {
         {backgroundShapes.map((shape, index) => (
           <div
             key={index}
-            className={`work-shape absolute rounded-3xl border-2 ${shape.color} opacity-50`}
+            className={`work-shape absolute rounded-3xl border-2 ${shape.color} opacity-[0.15]`}
             style={{
               top: shape.top,
               left: shape.left,
