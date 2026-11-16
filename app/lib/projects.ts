@@ -712,4 +712,18 @@ export const projects: Project[] = [
       cdn("924547e05e4d4391bd5edacbf77ee7cb"),
     ],
   },
+  {
+    slug: "activating-hope-podcast",
+    title: "Activating Hope Podcast Project",
+    category: "Audio Editing, Podcasting",
+    tags: ["Misc"],
+    description:
+      "I am proud to be the Executive Producer for the Activating Hope Podcast. I've done all of the sound engineering for this podcast, put together the audio intro, and edited all of her episodes in Adobe Audition.",
+    image: cdn("863e7d8aef454729b4bb211cd6c475ac"),
+    images: [
+      cdn("863e7d8aef454729b4bb211cd6c475ac"),
+      cdn("d81cdbb256cf42639ebe94e3ca417ca6"),
+      cdn("9ce395b7a60649dd981b626b1c29c3e8"),
+    ],
+  },
 ];
