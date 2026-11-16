@@ -7,12 +7,12 @@ export function meta() {
 }
 
 const backgroundShapes = [
-  { top: "5%", left: "4%", width: "10rem", height: "3rem", color: "border-[hsl(152_60%_45%)]", delay: "0s" },
-  { top: "28%", right: "5%", width: "36rem", height: "10rem", color: "border-primary", delay: "-4s" },
-  { bottom: "8%", left: "22%", width: "26rem", height: "5rem", color: "border-[hsl(152_60%_45%)]", delay: "-8s" },
-  { top: "52%", left: "-6%", width: "18rem", height: "9rem", color: "border-primary", delay: "-12s" },
-  { top: "10%", right: "34%", width: "8rem", height: "8rem", color: "border-primary", delay: "-6s" },
-  { bottom: "3%", right: "12%", width: "22rem", height: "4rem", color: "border-[hsl(152_60%_45%)]", delay: "-15s" },
+  { top: "5%", left: "4%", height: "22vh", color: "border-[hsl(152_60%_45%)]", delay: "0s" },
+  { top: "18%", right: "5%", height: "60vh", color: "border-primary", delay: "-4s" },
+  { bottom: "6%", left: "22%", height: "38vh", color: "border-[hsl(152_60%_45%)]", delay: "-8s" },
+  { top: "45%", left: "-6%", height: "55vh", color: "border-primary", delay: "-12s" },
+  { top: "8%", right: "34%", height: "30vh", color: "border-primary", delay: "-6s" },
+  { bottom: "2%", right: "12%", height: "45vh", color: "border-[hsl(152_60%_45%)]", delay: "-15s" },
 ];
 
 export default function WorkRoute() {
@@ -31,8 +31,8 @@ export default function WorkRoute() {
               left: shape.left,
               right: shape.right,
               bottom: shape.bottom,
-              width: shape.width,
               height: shape.height,
+              aspectRatio: "6 / 4",
               rotate: "-18deg",
               animationDelay: shape.delay,
             }}
