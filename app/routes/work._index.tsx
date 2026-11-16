@@ -6,6 +6,15 @@ export function meta() {
   return [{ title: "Work — Iam Bennett" }];
 }
 
+const backgroundShapes = [
+  { top: "8%", left: "6%", width: "16rem", height: "6rem", color: "border-[hsl(152_60%_45%)]", delay: "0s" },
+  { top: "30%", right: "8%", width: "20rem", height: "8rem", color: "border-primary", delay: "-4s" },
+  { bottom: "10%", left: "25%", width: "12rem", height: "4rem", color: "border-[hsl(152_60%_45%)]", delay: "-8s" },
+  { top: "55%", left: "-3%", width: "24rem", height: "7rem", color: "border-primary", delay: "-12s" },
+  { top: "12%", right: "30%", width: "14rem", height: "5rem", color: "border-primary", delay: "-6s" },
+  { bottom: "5%", right: "20%", width: "18rem", height: "6rem", color: "border-[hsl(152_60%_45%)]", delay: "-15s" },
+];
+
 export default function WorkRoute() {
   return (
     <div className="relative h-full min-h-0 flex-1 overflow-y-auto bg-background text-foreground">
@@ -13,13 +22,22 @@ export default function WorkRoute() {
         aria-hidden="true"
         className="pointer-events-none fixed inset-0 overflow-hidden"
       >
-        <div className="work-blob absolute -left-32 top-24 size-[36rem] bg-primary opacity-[0.12] blur-3xl" />
-        <div className="work-blob work-blob--alt absolute -right-40 top-[40%] size-[42rem] bg-[hsl(152_60%_45%)] opacity-[0.12] blur-3xl" />
-        <div className="work-circle absolute right-[20%] top-[15%] size-72 rounded-full border-2 border-[hsl(152_60%_45%)] opacity-[0.35]" />
-        <div
-          className="work-circle absolute bottom-[12%] left-[15%] size-96 rounded-full border-2 border-primary opacity-[0.3]"
-          style={{ animationDelay: "-9s" }}
-        />
+        {backgroundShapes.map((shape, index) => (
+          <div
+            key={index}
+            className={`work-shape absolute rounded-3xl border-2 ${shape.color} opacity-[0.3]`}
+            style={{
+              top: shape.top,
+              left: shape.left,
+              right: shape.right,
+              bottom: shape.bottom,
+              width: shape.width,
+              height: shape.height,
+              rotate: "-18deg",
+              animationDelay: shape.delay,
+            }}
+          />
+        ))}
       </div>
       <SiteHeader />
       <main className="relative mx-auto max-w-6xl px-6 py-20">
