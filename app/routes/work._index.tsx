@@ -15,9 +15,9 @@ export default function WorkRoute() {
       >
         <div className="work-blob absolute -left-32 top-24 size-[36rem] bg-primary opacity-[0.12] blur-3xl" />
         <div className="work-blob work-blob--alt absolute -right-40 top-[40%] size-[42rem] bg-[hsl(152_60%_45%)] opacity-[0.12] blur-3xl" />
-        <div className="work-circle absolute right-[20%] top-[15%] size-40 rounded-full bg-[hsl(152_60%_45%)] opacity-[0.15]" />
+        <div className="work-circle absolute right-[20%] top-[15%] size-72 rounded-full border-2 border-[hsl(152_60%_45%)] opacity-[0.35]" />
         <div
-          className="work-circle absolute bottom-[12%] left-[15%] size-56 rounded-full bg-primary opacity-[0.12]"
+          className="work-circle absolute bottom-[12%] left-[15%] size-96 rounded-full border-2 border-primary opacity-[0.3]"
           style={{ animationDelay: "-9s" }}
         />
       </div>
