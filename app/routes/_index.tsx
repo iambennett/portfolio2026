@@ -139,7 +139,7 @@ const testimonials = [
   },
 ];
 
-const TESTIMONIAL_INTERVAL_MS = 15000;
+const TESTIMONIAL_INTERVAL_MS = 10000;
 
 const TESTIMONIALS_PER_PAGE = 3;
 const testimonialPageCount = Math.ceil(
@@ -241,7 +241,10 @@ function TestimonialsCarousel() {
         Testimonials
       </h2>
       <div className="relative">
-        <div className="mx-auto grid w-[min(calc(100%-8rem),72rem)] gap-x-8 gap-y-16 pt-14 md:grid-cols-3">
+        <div
+          key={page}
+          className="testimonial-slide-in mx-auto grid w-[min(calc(100%-8rem),72rem)] gap-x-8 gap-y-16 pt-14 md:grid-cols-3"
+        >
           {visible.map((testimonial, position) => (
             <TestimonialCard
               key={testimonial.name}

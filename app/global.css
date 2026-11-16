@@ -187,8 +187,27 @@
   }
 }
 
+@keyframes testimonial-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.testimonial-slide-in {
+  animation: testimonial-slide-in 0.8s ease-out both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .an-chat-history-row:hover .chat-sidebar-thread-title__content {
+    animation: none;
+  }
+
+  .testimonial-slide-in {
     animation: none;
   }
 }
