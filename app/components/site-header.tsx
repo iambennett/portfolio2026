@@ -2,8 +2,9 @@ import { Link } from "react-router";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const navLinks = [
-  { label: "Work", to: "/work" },
-  { label: "About", to: "/resume" },
+  { label: "Home", to: "/" },
+  { label: "My Work", to: "/work" },
+  { label: "My Resume", to: "/resume" },
 ];
 
 export function SiteHeader() {
