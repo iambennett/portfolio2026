@@ -24,6 +24,7 @@ export type Project = {
   gradient?: string;
   description?: string;
   images?: string[];
+  spotifyEpisodeId?: string;
 };
 
 export const projects: Project[] = [
@@ -719,6 +720,7 @@ export const projects: Project[] = [
     tags: ["Misc"],
     description:
       "I am proud to be the Executive Producer for the Activating Hope Podcast. I've done all of the sound engineering for this podcast, put together the audio intro, and edited all of her episodes in Adobe Audition.",
+    spotifyEpisodeId: "6r4u1Bn96wBhQMus46ub1X",
     image: cdn("863e7d8aef454729b4bb211cd6c475ac"),
     images: [
       cdn("863e7d8aef454729b4bb211cd6c475ac"),

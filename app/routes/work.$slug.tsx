@@ -67,6 +67,17 @@ export default function ProjectRoute() {
             {project.description}
           </p>
         )}
+        {project.spotifyEpisodeId && (
+          <iframe
+            title={`${project.title} audio episode`}
+            src={`https://open.spotify.com/embed/episode/${project.spotifyEpisodeId}`}
+            width="100%"
+            height="152"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            className="mt-10 rounded-xl"
+          />
+        )}
         <div className="mt-12 space-y-6">
           {project.images ? (
             project.images.map((src, index) => (
