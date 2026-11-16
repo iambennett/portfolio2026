@@ -7,12 +7,12 @@ export function meta() {
 }
 
 const backgroundShapes = [
-  { top: "8%", left: "6%", width: "16rem", height: "6rem", color: "border-[hsl(152_60%_45%)]", delay: "0s" },
-  { top: "30%", right: "8%", width: "20rem", height: "8rem", color: "border-primary", delay: "-4s" },
-  { bottom: "10%", left: "25%", width: "12rem", height: "4rem", color: "border-[hsl(152_60%_45%)]", delay: "-8s" },
-  { top: "55%", left: "-3%", width: "24rem", height: "7rem", color: "border-primary", delay: "-12s" },
-  { top: "12%", right: "30%", width: "14rem", height: "5rem", color: "border-primary", delay: "-6s" },
-  { bottom: "5%", right: "20%", width: "18rem", height: "6rem", color: "border-[hsl(152_60%_45%)]", delay: "-15s" },
+  { top: "5%", left: "4%", width: "10rem", height: "3rem", color: "border-[hsl(152_60%_45%)]", delay: "0s" },
+  { top: "28%", right: "5%", width: "36rem", height: "10rem", color: "border-primary", delay: "-4s" },
+  { bottom: "8%", left: "22%", width: "26rem", height: "5rem", color: "border-[hsl(152_60%_45%)]", delay: "-8s" },
+  { top: "52%", left: "-6%", width: "18rem", height: "9rem", color: "border-primary", delay: "-12s" },
+  { top: "10%", right: "34%", width: "8rem", height: "8rem", color: "border-primary", delay: "-6s" },
+  { bottom: "3%", right: "12%", width: "22rem", height: "4rem", color: "border-[hsl(152_60%_45%)]", delay: "-15s" },
 ];
 
 export default function WorkRoute() {
@@ -25,7 +25,7 @@ export default function WorkRoute() {
         {backgroundShapes.map((shape, index) => (
           <div
             key={index}
-            className={`work-shape absolute rounded-3xl border-2 ${shape.color} opacity-[0.3]`}
+            className={`work-shape absolute rounded-3xl border-2 ${shape.color} opacity-50`}
             style={{
               top: shape.top,
               left: shape.left,
