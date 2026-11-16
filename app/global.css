@@ -208,13 +208,17 @@
     border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
     transform: translate(0, 0) rotate(0deg);
   }
-  33% {
+  25% {
     border-radius: 45% 55% 40% 60% / 60% 40% 55% 45%;
-    transform: translate(3%, -4%) rotate(20deg);
+    transform: translate(35vw, 20vh) rotate(60deg);
   }
-  66% {
+  50% {
     border-radius: 55% 45% 60% 40% / 40% 55% 45% 60%;
-    transform: translate(-3%, 3%) rotate(-15deg);
+    transform: translate(10vw, 50vh) rotate(-30deg);
+  }
+  75% {
+    border-radius: 40% 60% 45% 55% / 55% 45% 60% 40%;
+    transform: translate(-30vw, 15vh) rotate(90deg);
   }
 }
 
