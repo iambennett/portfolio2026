@@ -20,7 +20,7 @@
   "dependencies": {
     "@agent-native/agentkit": "^0.210.0",
     "@agent-native/core": "0.210.0",
-    "@agent-native/otel": "latest",
+    "@agent-native/otel": "0.1.11",
     "@agent-native/toolkit": "^0.210.0",
     "@ai-sdk/anthropic": "^3.0.71",
     "@ai-sdk/cohere": "^3.0.39",

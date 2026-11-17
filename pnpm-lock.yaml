@@ -63,7 +63,7 @@ importers:
         specifier: 0.210.0
         version: 0.210.0(eb9e4a4f93556d157736b557031f5f41)
       '@agent-native/otel':
-        specifier: latest
+        specifier: 0.1.11
         version: 0.1.11(@agent-native/core@0.210.0(eb9e4a4f93556d157736b557031f5f41))
       '@agent-native/toolkit':
         specifier: ^0.210.0
@@ -1983,6 +1983,7 @@ packages:
   '@opentelemetry/sdk-trace-base@2.12.0':
     resolution: {integrity: sha512-JOERgZCxRM06FEJ5kEWxlSRChah6MmXDx3KwCruqEv/iEyLkTokCSemf2y1w8oIHtfrr8EVTpzebq/31vn2Cpg==}
     engines: {node: ^18.19.0 || >=20.6.0}
+    deprecated: Use @opentelemetry/sdk-trace package
     peerDependencies:
       '@opentelemetry/api': '>=1.3.0 <1.10.0'
 
