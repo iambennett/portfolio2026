@@ -1,0 +1,1 @@
+import{t as e}from"./optional-peer-BHoJSOIB.js";function t(){throw new e(`@sentry/browser`)}var n=t,r=t,i=t,a=t,o=t;export{n as captureException,r as init,i as setTag,a as setUser,o as withScope};

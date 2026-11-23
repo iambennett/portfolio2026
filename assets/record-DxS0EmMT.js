@@ -1,0 +1,1 @@
+import{t as e}from"./optional-peer-BHoJSOIB.js";function t(){throw new e(`@rrweb/record`)}var n=t;export{n as record};
