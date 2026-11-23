@@ -1,45 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><script data-agent-native-chunk-recovery-bootstrap>(()=>{
-const queryParam="__agentNativeChunkRecovery";
-const queryValue="1";
-const cacheBusterParam="__agentNativeChunkRecoveryRequest";
-const pathSuffix="/__agent-native-chunk-recovery";
-const originalHashParam="__agentNativeRecoveryOriginalHash";
-const reloadKey="__agentNativeStaleChunkReloadAt";
-const warmupAttr="data-agent-native-route-warmup";
-document.addEventListener("error",event=>{
-const target=event.target;
-const tag=target?.tagName?.toUpperCase();
-const failedModuleScript=tag==="SCRIPT"&&target.type?.toLowerCase()==="module";
-const failedModulePreload=tag==="LINK"&&/(?:^|\s)modulepreload(?:\s|$)/i.test(target.getAttribute?.("rel")||target.rel||"")&&!target.hasAttribute?.(warmupAttr);
-if(!failedModuleScript&&!failedModulePreload||/AgentNativeDesktop/i.test(navigator.userAgent))return;
-if(/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname))return;
-const url=new URL(location.href);
-if(url.pathname.endsWith(pathSuffix)||url.pathname.endsWith(pathSuffix+"/")||url.searchParams.get(queryParam)===queryValue)return;
-const now=Date.now();
-let last=Number(window[reloadKey])||0;
-try{
-last=Math.max(last,Number(sessionStorage.getItem(reloadKey))||0);
-if(last>0&&now-last<=10000)return;
-sessionStorage.setItem(reloadKey,String(now));
-}catch{
-last=Number(window[reloadKey])||0;
-if(last>0&&now-last<=10000)return;
-}
-window[reloadKey]=now;
-const originalHash=url.hash;
-const trailingSlash=url.pathname.endsWith("/")?"/":"";
-const routePath=trailingSlash?url.pathname.slice(0,-1):url.pathname;
-url.pathname=(routePath==="/"?"":routePath)+pathSuffix+trailingSlash;
-url.searchParams.delete(queryParam);
-url.searchParams.delete(cacheBusterParam);
-const recoveryHash=new URLSearchParams();
-recoveryHash.set(cacheBusterParam,now.toString(36));
-recoveryHash.set(originalHashParam,originalHash);
-url.hash=recoveryHash.toString();
-location.assign(url.href);
-event.stopImmediatePropagation();
-},true);
-})();</script><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/><meta name="theme-color" content="#18181B"/><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta name="apple-mobile-web-app-title" content="App"/><link rel="icon" type="image/svg+xml" href="/favicon.svg"/><link rel="apple-touch-icon" href="/icon-180.svg"/><link rel="modulepreload" href="/assets/manifest-3af2b41a.js"/><link rel="modulepreload" href="/assets/entry.client-Cc3C_jhC.js"/><link rel="modulepreload" href="/assets/rolldown-runtime-QTnfLwEv.js"/><link rel="modulepreload" href="/assets/client-Ekg9OAM5.js"/><link rel="modulepreload" href="/assets/jsx-runtime-BAC1QEMr.js"/><link rel="modulepreload" href="/assets/react-dom-BKnmGd71.js"/><link rel="modulepreload" href="/assets/components-hWC2IMiw.js"/><link rel="modulepreload" href="/assets/preload-helper-CZgWQFsJ.js"/><link rel="modulepreload" href="/assets/root-BjMzEgsw.js"/><link rel="modulepreload" href="/assets/lib-CEL4kyqD.js"/><link rel="modulepreload" href="/assets/analytics-C5ezqILL.js"/><link rel="modulepreload" href="/assets/session-replay-endpoint-BnoDaz8P.js"/><link rel="modulepreload" href="/assets/use-session-CXHsMx_j.js"/><link rel="modulepreload" href="/assets/createReactComponent-DtVIw2Gk.js"/><link rel="modulepreload" href="/assets/optional-peer-BHoJSOIB.js"/><script>(function(){function m(){var d={};return{get length(){return Object.keys(d).length},key:function(i){return Object.keys(d)[i]||null},getItem:function(k){k=String(k);return Object.prototype.hasOwnProperty.call(d,k)?d[k]:null},setItem:function(k,v){d[String(k)]=String(v)},removeItem:function(k){delete d[String(k)]},clear:function(){d={}}}}function s(n){try{var x=window[n],p='__an_storage_probe__';x.setItem(p,'1');x.removeItem(p)}catch(e){try{Object.defineProperty(window,n,{configurable:true,value:m()})}catch(_){}}}s('localStorage');s('sessionStorage');try{var defaultTheme="dark";var enableSystem=true;var stored=window.localStorage.getItem('theme');var valid=stored==='light'||stored==='dark'||stored==='system'||stored==='auto';var mode=valid?stored:defaultTheme;if(mode==='auto')mode='system';if(!enableSystem&&mode==='system')mode=defaultTheme==='system'?'light':defaultTheme;if(!valid){window.localStorage.removeItem('theme')}else if(stored!==mode){window.localStorage.setItem('theme',mode)}var prefersDark=enableSystem&&mode==='system'&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;var resolved=mode==='system'?(prefersDark?'dark':'light'):mode;var root=document.documentElement;root.classList.remove('light','dark');root.classList.add(resolved);root.setAttribute('data-theme',resolved);root.style.colorScheme=resolved;var appearance=window.localStorage.getItem('appearance');var appearanceValid=appearance==='warm'||appearance==='ocean'||appearance==='forest'||appearance==='rose'||appearance==='slate';if(appearanceValid){root.setAttribute('data-appearance',appearance)}else{root.removeAttribute('data-appearance');if(appearance!==null)window.localStorage.removeItem('appearance')}}catch(e){}})();
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/><meta name="theme-color" content="#18181B"/><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta name="apple-mobile-web-app-title" content="App"/><link rel="icon" type="image/svg+xml" href="/favicon.svg"/><link rel="apple-touch-icon" href="/icon-180.svg"/><link rel="modulepreload" href="/assets/manifest-3af2b41a.js"/><link rel="modulepreload" href="/assets/entry.client-Cc3C_jhC.js"/><link rel="modulepreload" href="/assets/rolldown-runtime-QTnfLwEv.js"/><link rel="modulepreload" href="/assets/client-Ekg9OAM5.js"/><link rel="modulepreload" href="/assets/jsx-runtime-BAC1QEMr.js"/><link rel="modulepreload" href="/assets/react-dom-BKnmGd71.js"/><link rel="modulepreload" href="/assets/components-hWC2IMiw.js"/><link rel="modulepreload" href="/assets/preload-helper-CZgWQFsJ.js"/><link rel="modulepreload" href="/assets/root-BjMzEgsw.js"/><link rel="modulepreload" href="/assets/lib-CEL4kyqD.js"/><link rel="modulepreload" href="/assets/analytics-C5ezqILL.js"/><link rel="modulepreload" href="/assets/session-replay-endpoint-BnoDaz8P.js"/><link rel="modulepreload" href="/assets/use-session-CXHsMx_j.js"/><link rel="modulepreload" href="/assets/createReactComponent-DtVIw2Gk.js"/><link rel="modulepreload" href="/assets/optional-peer-BHoJSOIB.js"/><script>(function(){function m(){var d={};return{get length(){return Object.keys(d).length},key:function(i){return Object.keys(d)[i]||null},getItem:function(k){k=String(k);return Object.prototype.hasOwnProperty.call(d,k)?d[k]:null},setItem:function(k,v){d[String(k)]=String(v)},removeItem:function(k){delete d[String(k)]},clear:function(){d={}}}}function s(n){try{var x=window[n],p='__an_storage_probe__';x.setItem(p,'1');x.removeItem(p)}catch(e){try{Object.defineProperty(window,n,{configurable:true,value:m()})}catch(_){}}}s('localStorage');s('sessionStorage');try{var defaultTheme="dark";var enableSystem=true;var stored=window.localStorage.getItem('theme');var valid=stored==='light'||stored==='dark'||stored==='system'||stored==='auto';var mode=valid?stored:defaultTheme;if(mode==='auto')mode='system';if(!enableSystem&&mode==='system')mode=defaultTheme==='system'?'light':defaultTheme;if(!valid){window.localStorage.removeItem('theme')}else if(stored!==mode){window.localStorage.setItem('theme',mode)}var prefersDark=enableSystem&&mode==='system'&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;var resolved=mode==='system'?(prefersDark?'dark':'light'):mode;var root=document.documentElement;root.classList.remove('light','dark');root.classList.add(resolved);root.setAttribute('data-theme',resolved);root.style.colorScheme=resolved;var appearance=window.localStorage.getItem('appearance');var appearanceValid=appearance==='warm'||appearance==='ocean'||appearance==='forest'||appearance==='rose'||appearance==='slate';if(appearanceValid){root.setAttribute('data-appearance',appearance)}else{root.removeAttribute('data-appearance');if(appearance!==null)window.localStorage.removeItem('appearance')}}catch(e){}})();
 
 (function() {
   try {
@@ -345,4 +304,9 @@ import * as route0 from "/assets/root-BjMzEgsw.js";
   
   window.__reactRouterRouteModules = {"root":route0};
 
-import("/assets/entry.client-Cc3C_jhC.js");</script><!--$--><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_3\":-5,\"_4\":-5},\"loaderData\",{},\"actionData\",\"errors\"]\n");</script><!--$--><script>window.__reactRouterContext.streamController.close();</script><!--/$--><!--/$--></body></html>
+import("/assets/entry.client-Cc3C_jhC.js");</script><!--$!--><template data-msg="Switched to client rendering because the server rendering aborted due to:
+
+The server used &quot;renderToString&quot; which does not support Suspense. If you intended for this Suspense boundary to render the fallback content on the server consider throwing an Error somewhere within the Suspense boundary. If you intended to have the server wait for the suspended component please switch to &quot;renderToPipeableStream&quot; which supports Suspense on the server" data-cstck="
+    at StreamTransfer (file:///root/builds/static-src/node_modules/.pnpm/react-router@8.1.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/single-fetch.js:27:27)
+    at Suspense (&lt;anonymous&gt;)
+    at ServerRouter (file:///root/builds/static-src/node_modules/.pnpm/react-router@8.1.0_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/react-router/dist/production/lib/dom/ssr/server.js:32:25)"></template><!--/$--></body></html>
