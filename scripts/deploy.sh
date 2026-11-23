@@ -18,7 +18,7 @@ esac
 
 cd "$(dirname "$0")/.."
 
-ROOT_FILES="index.html manifest.json favicon.svg icon-180.svg icon-192.svg icon-512.svg agent-native-icon-dark.svg agent-native-icon-light.svg agent-native-logo-dark.svg agent-native-logo-light.svg"
+ROOT_FILES="index.html manifest.json favicon.png apple-touch-icon.png favicon.svg icon-180.svg icon-192.svg icon-512.svg agent-native-icon-dark.svg agent-native-icon-light.svg agent-native-logo-dark.svg agent-native-logo-light.svg"
 DIRS="assets images"
 
 FILES="$ROOT_FILES $(find $DIRS -type f)"
